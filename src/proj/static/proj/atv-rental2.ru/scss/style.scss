@@ -45,7 +45,7 @@ body {
         font-weight: 400;
         margin-top: 10px;
         font-size: 18px;
-        letter-spacing: -1.3px;
+        letter-spacing: -1px;
         width: 170px;
     }
 
@@ -88,13 +88,13 @@ body {
         font-size: 25px;
         font-weight: 800;
         line-height: 34px;
-        letter-spacing: -1px;
+        letter-spacing: -0.6px;
     }
 
     &__phone-subtitle {
         font-size: 12px;
         line-height: 16px;
-        letter-spacing: -0.6px;
+        letter-spacing: -0.8px;
         padding-left: 6px;
         margin: 0;
     }
@@ -104,7 +104,7 @@ body {
         font-weight: 800;
         line-height: 34px;
         letter-spacing: -0.025em;
-        width: 284px;
+        // width: 284px;
         margin-bottom: 25px;
     }
 
@@ -114,25 +114,12 @@ body {
     }
 
     &__button {
-        outline: none;
-        display: inline-block;
-        padding: 20px 26px 22px 32px;
-        color: #fff;
-        width: 267px;
-        height: 64px;
         text-align: center;
-        font-size: 16px;
-        line-height: 22px;
-        font-weight: 700;
-        letter-spacing: -0.06em;
-
-        background: linear-gradient(223.45deg, #00B6F8 15.38%, #03D4F9 86.59%);
-        box-shadow: 0px 0px 4px #01C4F8;
-        border-radius: 36px;
     }
 
     &__text-wrap {
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -157,10 +144,36 @@ body {
             box-shadow: 0px 0px 4px #01C4F8;
         }
     }
+
+    &__bottom {
+        margin-top: 32px;
+
+        &-item {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 400;
+            letter-spacing: -0.06em;
+        }
+    }
 }
 
-.main__button {
+
+
+.button {
+    display: inline-block;
+    padding: 20px 26px 22px 32px;
+    color: #fff;
+    width: 267px;
+    height: 64px;
     text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    letter-spacing: -0.06em;
+
+    background: linear-gradient(223.45deg, #00B6F8 15.38%, #03D4F9 86.59%);
+    box-shadow: 0px 0px 4px #01C4F8;
+    border-radius: 36px;
 }
 
 .menu {
@@ -271,10 +284,10 @@ body {
 
     .header {
         &__top-inner {
-            padding: 0 29px 0 40px;
+            padding: 0 40px 0 40px;
+            align-items: center;
             // display: flex;
             // justify-content: space-around;
-
         }
 
         &__logo {
@@ -282,9 +295,17 @@ body {
             align-items: center;
         }
 
+        &__descr-text {
+            margin-top: 0;
+        }
+
         &__info {
             visibility: visible;
-            margin-top: 25px;
+            margin-top: 21px;
+        }
+
+        &__content {
+            margin-top: 55px;
         }
     }
 
@@ -297,11 +318,11 @@ body {
     }
 }
 
-@media (min-width: 1360px) {
-    .container {
-        margin: 0 auto;
-    }
-}
+// @media (min-width: 1360px) {
+//     .container {
+//         margin: 0 auto;
+//     }
+// }
 
 // .logo {
 //     &__img {
