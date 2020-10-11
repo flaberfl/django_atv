@@ -1,0 +1,81 @@
+{% load static %}
+{% load rupluralize %}
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top-inner">
+                <div class="logo header__logo">
+                    <a class="logo__link" href="/">
+                        <img class="logo__img" src="{% static static_prefix|add:'../img/logo.png' %}" alt="logo">
+                    </a>
+                    <div class="header__descr">
+                        <p class="header__descr-text">
+                            сервис - дескриптор
+                        </p>
+                    </div>
+                </div>
+
+                <div class="header__info">
+                    <a class="header__phone" href="tel:74956458787">+7(495) 645-87-87</a>
+                    <p class="header__phone-subtitle">Есть вопросы? Звоните!</p>
+                </div>
+
+                <nav class="menu">
+                    <div class="menu__hamburger">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="#">Квадрациклы</a></li>
+                            <li><a class="menu__item" href="#">Снегоходы</a></li>
+                            <li><a class="menu__item" href="#">Вид услуги</a></li>
+                            <li><a class="menu__item" href="#">Вид услуги</a> </li>
+                            <li><a class="menu__item" href="#">Вид услуги</a> </li>
+                            <li><a class="menu__item" href="#">Вид услуги</a> </li>
+                            <li><a class="menu__item" href="#">Вид услуги</a> </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="header__content">
+        <!-- <div class="header-decor header-decor--bg">
+            <div class="header-slider">
+                <img class="header__img" src="{% static static_prefix|add:'../img/slider/jeep.webp' %}" alt="">
+                <img class="header__img" src="{% static static_prefix|add:'../img/slider/baggi.webp' %}" alt="">
+                <img class="header__img" src="{% static static_prefix|add:'../img/slider/kvadro.webp' %}" alt="">
+            </div>
+        </div> -->
+        <div class="header__text">
+            <div class="container">
+                <div class="header__text-wrap">
+                    <h1 class="header__title">Закажите катание на
+                        квадроциклах прямо
+                        сейчас</h1>
+                </div>
+
+                <div class="header__advantages">
+                    <div class="advantages__item">Более 50 маршрутов в Москве</div>
+                    <div class="advantages__item">более 50 видов техники</div>
+                    <div class="advantages__item">в 5-ти локациях в Москве</div>
+                </div>
+
+                <div class="main__button">
+                    <a href="#catalog" class="header__button">Перейти в каталог</a>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="header__button header__button--mb">
+                <div class="container">
+                    <a href="#category" class="button">Выбрать
+                        катание</a>
+                </div>
+            </div> -->
+
+    </div>
+</header>

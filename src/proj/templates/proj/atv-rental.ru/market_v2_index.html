@@ -1,0 +1,24 @@
+{% extends './base.html' %}
+{% load static %}
+{% load rupluralize %}
+
+
+{% block content %}
+{% include './block/header.html' %}
+
+<h3>
+    используй имена файлов страниц как тут в примере
+</h3>
+<ul>
+    <li>
+        market_v2_index.html - главная страница
+    </li>
+    <li>
+        service_list.html - страница, где показывается список услуг
+    </li>
+    <li>
+        service_detail.html - страница, где показывается описание только одной услуги
+    </li>
+</ul>
+
+{% endblock %}
