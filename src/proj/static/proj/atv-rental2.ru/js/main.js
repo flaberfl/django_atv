@@ -7,7 +7,9 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
+        centerMode: true,
         lazyLoad: 'progressive',
+        // variableWidth: true,
         // adaptiveHeight: true,
         // variableWidth: true,
         adaptiveHeight: false,
@@ -33,11 +35,11 @@ $(function () {
         ]
     });
 
-    $('.info__content-description--text').readmore({
-        maxHeight: 240,
-        moreLink: '<a class="read-more" href="#">Читать полностью</a>',
-        lessLink: '<a class="read-more" href="#">Свернуть текст</a>'
-    });
+    // $('.info__content-description--text').readmore({
+    //     maxHeight: 240,
+    //     moreLink: '<a class="read-more" href="#">Читать полностью</a>',
+    //     lessLink: '<a class="read-more" href="#">Свернуть текст</a>'
+    // });
 
 
 });

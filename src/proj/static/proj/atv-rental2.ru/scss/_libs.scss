@@ -389,6 +389,8 @@ template {
 }
 
 /* Slider */
+
+
 .slick-slider {
   position: relative;
 
@@ -497,9 +499,9 @@ template {
 
   height: auto;
 
-  border: 1px solid transparent;
+  border: 1px solid black;
 }
 
-.slick-arrow.slick-hidden {
-  display: none;
-}
+// .slick-arrow.slick-hidden {
+//   display: none;
+// }

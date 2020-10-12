@@ -38,7 +38,7 @@ body {
     }
 
     &__logo {
-        margin-top: 21px;
+        margin-top: 39px;
     }
 
     &__descr-text {
@@ -277,7 +277,10 @@ body {
 
     .header {
         background-color: #EDF1F7;
-        padding-bottom: 85px;
+        // background-color: #000;
+        overflow-x: hidden;
+
+        // padding-bottom: 185px;
 
         &__top-inner {
             padding: 0 40px 0 40px;
@@ -298,13 +301,16 @@ body {
 
         &__info {
             visibility: visible;
-            margin-top: 17px;
+            margin-top: 22px;
         }
 
         &__content {
             margin-top: 52px;
             padding-left: 157px;
             padding-top: 41px;
+            padding-bottom: 45px;
+            display: flex;
+            justify-content: space-between;
         }
 
         &__title {
@@ -313,7 +319,7 @@ body {
             letter-spacing: -0.3px;
             line-height: 42px;
             width: 626px;
-            margin-bottom: 45px;
+            margin-bottom: 50px;
 
         }
 
@@ -325,7 +331,7 @@ body {
             text-align: left;
             padding-left: 6px;
             position: relative;
-            margin-bottom: 198px;
+            margin-bottom: 201px;
 
             &::before {
                 position: absolute;
@@ -346,6 +352,15 @@ body {
                 width: 292px;
             }
         }
+
+        // &-slider {
+        //     max-width: 600px;
+        // }
+    }
+
+    .slider-img {
+        overflow-x: hidden;
+
     }
 
     .logo {
@@ -362,11 +377,16 @@ body {
         }
 
         &__bottom {
+            // display: inline-block;
             display: flex;
             justify-content: space-between;
             max-width: 676px;
-            padding-left: 8px;
+            padding-left: 12px;
             letter-spacing: -0.9px;
+
+            &-item {
+                margin-right: 10px;
+            }
         }
     }
 }
