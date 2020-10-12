@@ -147,7 +147,6 @@ body {
     &__bottom {
         margin-top: 30px;
         padding-left: 7px;
-        border: 1px solid red;
         margin-bottom: 58px;
 
         &-item {
@@ -185,7 +184,7 @@ body {
         /* центрируем содержимое кнопки */
         position: fixed;
         top: 40px;
-        right: 33px;
+        right: 33px; //63px
         width: 54px;
         height: 26px;
         cursor: pointer;
@@ -229,7 +228,6 @@ body {
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
         transition-duration: .25s;
         z-index: 900;
-        // opacity: 0.5;
     }
 
     &__item {
@@ -246,12 +244,6 @@ body {
 
         }
     }
-
-    @media (min-width: 768px) {
-        // visibility: hidden;
-        display: none;
-    }
-
 }
 
 .slider-img {
@@ -283,16 +275,92 @@ body {
     left: 0;
 }
 
-///// Табы///////////////////////////
+///// Category ///////////////////////
 
-.cd-tabs nav {
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-    /*...*/
+.atv__rental {
+
+    padding-left: 17px;
+    margin-bottom: 42px;
+
+    &-features {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
 }
 
+.atv__title {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -0.2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
+.features {
+    &-text {
+        width: 110px;
+        font-size: 14px;
+        font-weight: 400;
+    }
 
+    &-img {
+        margin-right: 14px;
+    }
+}
+
+.atv__rout {
+    padding-bottom: 300px;
+    position: relative;
+    background: #EDF1F7;
+    ;
+
+    &-pref {
+        position: absolute;
+        content: "";
+        font-size: 14px;
+        left: 13px;
+        top: 45px;
+    }
+
+    &-img {
+        // width: 100%;
+        // height: 100%;
+        margin-bottom: 17px;
+        overflow-x: hidden;
+        // height: 239px;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 139px;
+        height: 51px;
+        top: 30px;
+        // background: url({% static static_prefix|add:'../img/rout__img.png' %});
+        background: #fff;
+        border-radius: 0px 30px 30px 0px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+    }
+
+    &-title {
+        font-size: 18px;
+        font-weight: 700;
+        width: 296px;
+        line-height: 25px;
+        // text-align: center;
+
+    }
+}
+
+.route-wrap--mb {
+    padding: 0 20px;
+}
 
 // Конец бургера //////////////////////
 
@@ -300,22 +368,21 @@ body {
 
     .header {
         background-color: #EDF1F7;
-        // background-color: #000;
         overflow-x: hidden;
 
         // padding-bottom: 185px;
 
         &__top-inner {
-            padding: 0 40px 0 40px;
-            align-items: center;
-
             // display: flex;
-            // justify-content: space-around;
+            // justify-content: space-between;
+            padding: 0 40px 0 40px;
+            // align-items: center;
+
         }
 
         &__logo {
             display: flex;
-            align-items: center;
+            vertical-align: middle;
         }
 
         &__descr-text {
@@ -328,10 +395,10 @@ body {
         }
 
         &__content {
-            margin-top: 52px;
+            margin-top: 10px;
             padding-left: 157px;
             padding-top: 41px;
-            padding-bottom: 45px;
+            // padding-bottom: 45px;
             display: flex;
             justify-content: space-between;
         }
@@ -347,14 +414,14 @@ body {
         }
 
         &__advantages {
-            margin-bottom: 50px;
+            margin-bottom: 46px;
         }
 
         &__button-desktop {
             text-align: left;
             padding-left: 6px;
             position: relative;
-            margin-bottom: 201px;
+            margin-bottom: 196px;
 
             &::before {
                 position: absolute;
@@ -381,8 +448,11 @@ body {
         // }
     }
 
+
+
     .slider-img {
-        overflow-x: hidden;
+        display: block;
+        // overflow-x: hidden;
 
     }
 
@@ -391,6 +461,11 @@ body {
 
             margin-right: 12px;
         }
+
+    }
+
+    .menu {
+        display: none;
     }
 
     .advantages {
@@ -404,11 +479,12 @@ body {
             display: flex;
             justify-content: space-between;
             max-width: 676px;
-            padding-left: 12px;
+            padding-left: 8px;
             letter-spacing: -0.9px;
 
             &-item {
                 margin-right: 10px;
+                // display: block;
             }
         }
     }

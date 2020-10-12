@@ -1,37 +1,37 @@
+{% load static %}
 {% load rupluralize %}
 <section class="category" id="category">
-    <div class="container">
 
 
-        <div class="atv__rental">
+    <div class="atv__title">Прокат квадроциклов</div>
 
-            <div class="atv__rental-title">Прокат квадроциклов</div>
+    <div class="atv__rental">
 
-            <div class="atv__rental-item"> //features
-                <img src="" alt="">
-                <div class="rental-item-text">
-                    Более 15 видов маршрутов
-                </div>
-            </div>
-            <div class="atv__rental-item">
-                <img src="" alt="">
-                <div class="rental-item-text">
-                    Цены от 2 500 рублей
-                </div>
-            </div>
-            <div class="atv__rental-item">
-                <img src="" alt="">
-                <div class="rental-item-text">
-                    Более 25 видов снегоходов
-                </div>
-            </div>
-
+        <div class="atv__rental-features">
+            <img class="features-img" src="{% static static_prefix|add:'../img/rout__img.png' %}" width="54px" alt="">
+            <p class="features-text">Более <b>15 видов</b> маршрутов</p>
         </div>
 
-        <div class="atv__rout">
-            <img src="" alt="" class="atv__rout-img">
-            <div class="atv__rout-title">Название маршрута “Топовый
-                в своём роде маршрут”</div>
+        <div class="atv__rental-features">
+            <img class="features-img" src="{% static static_prefix|add:'../img/price__img.png' %}" width="54px" alt="">
+            <p class="features-text">Цены от <b>2 500 рублей</b></p>
+        </div>
+        <div class=" atv__rental-features">
+            <img class="features-img" src="{% static static_prefix|add:'../img/plans__img.png' %}" width="54px" alt="">
+            <p class="features-text">Более <b>25 видов</b> снегоходов</p>
+        </div>
+
+    </div>
+
+    <div class="atv__rout">
+        <div class="atv__rout-pref">Квадроциклы</div>
+        <img class="atv__rout-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" width="351px" alt="">
+
+        <div class="route-wrap--mb">
+            <div class="wrap-route-title">
+                <p class="atv__rout-title">Название маршрута “Топовый в своём роде маршрут”</p>
+            </div>
+
             <div class="atv__rout-program">
                 <div class="program-item">Длинна маршрута: 20 км</div>
                 <div class="program-item">Время маршрута: 1 час</div>
@@ -44,11 +44,13 @@
         </div>
 
 
+    </div>
+
 
 
     </div>
 
-    </div>
+
 </section>
 
 <!-- <h2 class="title title--align_center title--pb category__title">
