@@ -1,6 +1,10 @@
 @import "vars";
 @import "libs";
 @import "fonts";
+@import "tabs/layout";
+@import "tabs/mixins";
+@import "tabs/tabs";
+
 
 html {
     box-sizing: border-box;
@@ -43,9 +47,10 @@ body {
 
     &__descr-text {
         font-weight: 400;
-        margin-top: 10px;
+        margin-top: 5px;
         font-size: 18px;
-        letter-spacing: -1px;
+        letter-spacing: -1.2px;
+        margin-bottom: 55px;
         width: 170px;
     }
 
@@ -97,7 +102,7 @@ body {
         font-size: 25px;
         font-weight: 800;
         line-height: 34px;
-        letter-spacing: -0.025em;
+        letter-spacing: -0.3px;
         // width: 284px;
         margin-bottom: 25px;
     }
@@ -121,7 +126,7 @@ body {
 
     &__item {
         font-size: 18px;
-        line-height: 25px;
+        line-height: 28px;
         letter-spacing: -0.06em;
         position: relative;
 
@@ -140,13 +145,16 @@ body {
     }
 
     &__bottom {
-        margin-top: 32px;
+        margin-top: 30px;
+        padding-left: 7px;
+        border: 1px solid red;
+        margin-bottom: 58px;
 
         &-item {
             font-size: 16px;
-            line-height: 22px;
+            line-height: 26px;
             font-weight: 400;
-            letter-spacing: -0.06em;
+            letter-spacing: -0.9px;
         }
     }
 }
@@ -176,9 +184,9 @@ body {
         align-items: center;
         /* центрируем содержимое кнопки */
         position: fixed;
-        top: 22px;
-        right: 32px;
-        width: 50px;
+        top: 40px;
+        right: 33px;
+        width: 54px;
         height: 26px;
         cursor: pointer;
         z-index: 999;
@@ -274,6 +282,17 @@ body {
     visibility: visible;
     left: 0;
 }
+
+///// Табы///////////////////////////
+
+.cd-tabs nav {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    /*...*/
+}
+
+
+
 
 // Конец бургера //////////////////////
 

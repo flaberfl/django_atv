@@ -500,9 +500,10 @@ body {
 
 .header__descr-text {
   font-weight: 400;
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 18px;
-  letter-spacing: -1px;
+  letter-spacing: -1.2px;
+  margin-bottom: 55px;
   width: 170px;
 }
 
@@ -559,7 +560,7 @@ body {
   font-size: 25px;
   font-weight: 800;
   line-height: 34px;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.3px;
   margin-bottom: 25px;
 }
 
@@ -585,7 +586,7 @@ body {
 
 .advantages__item {
   font-size: 18px;
-  line-height: 25px;
+  line-height: 28px;
   letter-spacing: -0.06em;
   position: relative;
 }
@@ -608,14 +609,17 @@ body {
 }
 
 .advantages__bottom {
-  margin-top: 32px;
+  margin-top: 30px;
+  padding-left: 7px;
+  border: 1px solid red;
+  margin-bottom: 58px;
 }
 
 .advantages__bottom-item {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 26px;
   font-weight: 400;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.9px;
 }
 
 .button {
@@ -650,9 +654,9 @@ body {
           align-items: center;
   /* центрируем содержимое кнопки */
   position: fixed;
-  top: 22px;
-  right: 32px;
-  width: 50px;
+  top: 40px;
+  right: 33px;
+  width: 54px;
   height: 26px;
   cursor: pointer;
   z-index: 999;
@@ -752,6 +756,12 @@ body {
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
+}
+
+.cd-tabs nav {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  /*...*/
 }
 
 @media (min-width: 768px) {
