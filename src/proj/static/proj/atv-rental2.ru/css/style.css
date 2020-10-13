@@ -471,6 +471,7 @@ body {
   overflow-x: hidden;
   font-family: 'Noto Sans', sans-serif;
   font-size: 18px;
+  font-weight: 400;
   line-height: 22px;
   color: #3B3A48;
   background-color: #fff;
@@ -768,7 +769,7 @@ body {
   margin-bottom: 10px;
 }
 
-.atv__title {
+.category__title {
   font-size: 25px;
   font-weight: 800;
   letter-spacing: -0.2px;
@@ -801,6 +802,7 @@ body {
 }
 
 .atv__rout-img {
+  width: 100%;
   margin-bottom: 17px;
   overflow-x: hidden;
 }
@@ -826,10 +828,22 @@ body {
   font-weight: 700;
   width: 296px;
   line-height: 25px;
+  margin-bottom: 20px;
 }
 
 .route-wrap--mb {
   padding: 0 20px;
+}
+
+.program-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
 }
 
 @media (min-width: 768px) {

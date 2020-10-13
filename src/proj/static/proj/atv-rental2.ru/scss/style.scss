@@ -21,6 +21,7 @@ body {
     overflow-x: hidden;
     font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
+    font-weight: 400;
     line-height: 22px;
     color: #3B3A48;
     background-color: #fff;
@@ -290,7 +291,7 @@ body {
 
 }
 
-.atv__title {
+.category__title {
     font-size: 25px;
     font-weight: 800;
     letter-spacing: -0.2px;
@@ -327,6 +328,7 @@ body {
     &-img {
         // width: 100%;
         // height: 100%;
+        width: 100%;
         margin-bottom: 17px;
         overflow-x: hidden;
         // height: 239px;
@@ -338,7 +340,6 @@ body {
         width: 139px;
         height: 51px;
         top: 30px;
-        // background: url({% static static_prefix|add:'../img/rout__img.png' %});
         background: #fff;
         border-radius: 0px 30px 30px 0px;
     }
@@ -353,6 +354,7 @@ body {
         font-weight: 700;
         width: 296px;
         line-height: 25px;
+        margin-bottom: 20px;
         // text-align: center;
 
     }
@@ -360,6 +362,15 @@ body {
 
 .route-wrap--mb {
     padding: 0 20px;
+}
+
+.program-item {
+    display: flex;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+
 }
 
 // Конец бургера //////////////////////

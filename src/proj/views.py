@@ -3,9 +3,9 @@ from django.shortcuts import render
 
 APP_NAME = os.path.basename(os.path.dirname(os.path.abspath(__file__)))
 
-# SITE_NAME = 'site1.ru'
+SITE_NAME = 'site1.ru'
 # SITE_NAME = 'site2.ru'
-SITE_NAME = 'atv-rental2.ru'
+# SITE_NAME = 'atv-rental2.ru'
 
 
 def simple_renderer(request, template_filename):

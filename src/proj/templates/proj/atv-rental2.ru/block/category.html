@@ -3,7 +3,7 @@
 <section class="category" id="category">
 
 
-    <div class="atv__title">Прокат квадроциклов</div>
+    <div class="category__title">Прокат квадроциклов</div>
 
     <div class="atv__rental">
 
@@ -23,35 +23,137 @@
 
     </div>
 
-    <div class="atv__rout">
-        <div class="atv__rout-pref">Квадроциклы</div>
-        <img class="atv__rout-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" width="351px" alt="">
+    <div class="category__items">
 
-        <div class="route-wrap--mb">
-            <div class="wrap-route-title">
-                <p class="atv__rout-title">Название маршрута “Топовый в своём роде маршрут”</p>
+        <div class="category__item category__item--kvadro">
+
+            <div class="category__item-top">
+                <div class="top-title">Квадроциклы</div>
             </div>
 
-            <div class="atv__rout-program">
-                <div class="program-item">Длинна маршрута: 20 км</div>
-                <div class="program-item">Время маршрута: 1 час</div>
-                <div class="program-item">Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</div>
+            <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”</div>
+
+            <div class="category__item-text">
+
+                <div class="category__item-text-line">
+                    <div></div>
+                    <p>Время маршрута: 1 час</p>
+                </div>
+                <div class="category__item-text-line">
+                    <div></div>
+                    <p>Длинна маршрута: 20 км</p>
+                </div>
+                <div class="category__item-text-line">
+                    <div></div>
+                    <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                </div>
+
             </div>
-            <div class="atv__rout-about">
-                <div class="atv__rout-price"></div>
-                <a href="" class="atv__rout-link"></a>
-            </div>
+
+            <p class="category__item-price">2 500 р</p>
+
+            <a class="button category__button" href="service__detail"></a>
+
+
         </div>
 
-
     </div>
-
-
-
-    </div>
-
 
 </section>
+
+<section class="instruction">
+
+    <div class="instruction__items">
+
+        <div class="instruction__item">
+            <div class="instruction__item-step">1</div>
+            <p class="instruction__item-text">Выбираете маршрут на нашем сайте</p>
+        </div>
+        <div class="instruction__item">
+            <div class="instruction__item-step">2</div>
+            <p class="instruction__item-text">Бронируете маршрут онлайн</p>
+        </div>
+        <div class="instruction__item">
+            <div class="instruction__item-step">3</div>
+            <p class="instruction__item-text">Получаете онлайн билет на ваш телефон</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="category">
+    <div class="category__items">
+
+        <div class="category__item category__item--snowmobile">
+
+            <div class="category__item-top">
+                <div class="top-title">Снегоходы</div>
+            </div>
+
+            <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”</div>
+
+            <div class="category__item-text">
+
+                <div class="category__item-text-line">
+                    <div></div>
+                    <p>Время маршрута: 1 час</p>
+                </div>
+                <div class="category__item-text-line">
+                    <div></div>
+                    <p>Длинна маршрута: 20 км</p>
+                </div>
+                <div class="category__item-text-line">
+                    <div></div>
+                    <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                </div>
+
+            </div>
+
+            <p class="category__item-price">2 500 р</p>
+
+            <a class="button category__button" href="service__detail"></a>
+
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- <div class="route-wrap--mb">
+        <div class="wrap-route-title">
+            <p class="atv__rout-title">Название маршрута “Топовый в своём роде маршрут”</p>
+        </div>
+
+        <div class="atv__rout-program">
+
+            <div class="program-item">
+                <img src="{% static static_prefix|add:'../img/svg/gridicons_time.svg' %}" alt="">
+                <p>Время маршрута: 1 час</p>
+            </div>
+
+            <div class="program-item">
+                <img src="{% static static_prefix|add:'../img/svg/fa-solid_route.svg' %}" alt="">
+                <p>Длинна маршрута: 20 км</p>
+            </div>
+
+            <div class="program-item">
+                <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
+                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+            </div>
+
+        </div>
+
+        <div class=" tv__rout-about">
+            <div class="atv__rout-price"></div>
+            <a href="" class="atv__rout-link"></a>
+        </div>
+    </div> -->
+
+
+
+
+
 
 <!-- <h2 class="title title--align_center title--pb category__title">
             {% with service_type_data_list|length as n_service_type_data_list %}
