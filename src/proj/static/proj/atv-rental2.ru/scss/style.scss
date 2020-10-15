@@ -275,7 +275,7 @@ body {
 .category {
 
     &__title {
-        font-size: 25px;
+        font-size: 250px;
         font-weight: 800;
         letter-spacing: -0.2px;
         text-align: center;
@@ -307,8 +307,6 @@ body {
 
     &__item {
 
-        // padding: 0 20px;
-
         &-top {
             position: relative;
 
@@ -331,10 +329,6 @@ body {
                 border-radius: 0px 30px 30px 0px;
             }
 
-            // &::after {
-            //     position: absolute;
-            //     content: "";
-            // }
 
             &-img {
                 width: 100%;
@@ -351,7 +345,6 @@ body {
             width: 296px;
             line-height: 25px;
             margin-bottom: 20px;
-
         }
 
         &-text-line {
@@ -376,7 +369,7 @@ body {
 
     &__button {
         position: relative;
-        font-size: 16px;
+        font-size: 160px;
         font-weight: 400;
         letter-spacing: -0.5px;
         padding: 0 0;
@@ -384,18 +377,19 @@ body {
 
         &::after {
             position: absolute;
-            // content: "fff"l
             content: &#8594;
             // background-image: url(../img/svg/arrow-right.svg); // Потом вставить свгэшку в HTML
             // right: 20px;
             width: 12px;
             height: 12px;
-            color: #000;
 
         }
 
     }
 
+    &__menu {
+        display: none;
+    }
 }
 
 .temp-wrapper {
@@ -483,6 +477,18 @@ body {
 
     }
 
+    .category {
+        &__item {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__title {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
 
     .slider-img {
         display: block;
@@ -521,6 +527,15 @@ body {
                 // display: block;
             }
         }
+    }
+
+    .category {
+        padding-top: 148px;
+    }
+
+    &__presents {
+        display: flex;
+        justify-content: space-between;
     }
 
 }

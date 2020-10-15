@@ -7,6 +7,17 @@
 
     <div class="category__presents">
 
+        <nav class="categoru__menu">
+            <ul>
+                <li>Квадроциклы</li>
+                <li>Снегоходы</li>
+                <li>Лошади</li>
+                <li>Другое</li>
+                <li>Другое</li>
+                <li>Другое</li>
+            </ul>
+        </nav>
+
         <div class="category__presents-item">
             <img class="category__presents-item-img" src="{% static static_prefix|add:'../img/rout__img.png' %}"
                 width="54px" alt="">
@@ -105,33 +116,45 @@
         <div class="category__item category__item--snowmobile">
 
             <div class="category__item-top">
-                <div class="top-title">Снегоходы</div>
+                <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
+                <div class="category__item-top-title">Квадроциклы</div>
             </div>
 
-            <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”</div>
+            <div class="container">
+                <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”</div>
 
-            <div class="category__item-text">
+                <div class="category__item-text">
 
-                <div class="category__item-text-line">
-                    <div></div>
-                    <p>Время маршрута: 1 час</p>
+                    <div class="category__item-text-line">
+                        <img src="{% static static_prefix|add:'../img/svg/gridicons_time.svg' %}" alt="">
+                        <p>Время маршрута: 1 час</p>
+                    </div>
+                    <div class="category__item-text-line">
+                        <img src="{% static static_prefix|add:'../img/svg/fa-solid_route.svg' %}" alt="">
+                        <p>Длинна маршрута: 20 км</p>
+                    </div>
+                    <div class="category__item-text-line">
+                        <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
+                        <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                    </div>
+
                 </div>
-                <div class="category__item-text-line">
-                    <div></div>
-                    <p>Длинна маршрута: 20 км</p>
+
+                <div class="temp-wrapper">
+                    <p class="category__item-price">2</p>
+
+                    <div class="button category__button">
+                        <a href="service__detail">О маршруте</a>
+                    </div>
+
+
+
                 </div>
-                <div class="category__item-text-line">
-                    <div></div>
-                    <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
-                </div>
+
+
 
             </div>
 
-            <p class="category__item-price">2 500 р</p>
-
-            <div class="button category__button">
-                <a class="button category__button" href="service__detail"></a>
-            </div>
 
 
 
