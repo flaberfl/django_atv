@@ -31,5 +31,5 @@
         "**/.git/subtree-cache/**": true,
         "**/node_modules/*/**": true
     },
-    "python.formatting.provider": "black",
+    "python.formatting.provider": "yapf",
 }

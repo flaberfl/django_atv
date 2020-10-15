@@ -113,9 +113,6 @@ body {
         margin-bottom: 16px;
     }
 
-    &__button {
-        text-align: center;
-    }
 
     &__text-wrap {
         display: flex;
@@ -161,11 +158,8 @@ body {
 
 .button {
     display: inline-block;
-    padding: 20px 26px 22px 32px;
+    padding: 21px 59px 22px 66px;
     color: #fff;
-    width: 267px;
-    height: 64px;
-    text-align: center;
     font-size: 16px;
     line-height: 22px;
     font-weight: 700;
@@ -278,100 +272,137 @@ body {
 
 ///// Category ///////////////////////
 
-.atv__rental {
+.category {
 
-    padding-left: 17px;
-    margin-bottom: 42px;
-
-    &-features {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
+    &__title {
+        font-size: 25px;
+        font-weight: 800;
+        letter-spacing: -0.2px;
+        text-align: center;
+        margin-bottom: 30px;
     }
 
-}
+    &__presents {
+        padding-left: 17px;
+        margin-bottom: 42px;
 
-.category__title {
-    font-size: 25px;
-    font-weight: 800;
-    letter-spacing: -0.2px;
-    text-align: center;
-    margin-bottom: 30px;
-}
+        &-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
 
-.features {
-    &-text {
-        width: 110px;
-        font-size: 14px;
+            &-text {
+                width: 110px;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            &-img {
+                margin-right: 14px;
+            }
+
+        }
+
+    }
+
+    &__item {
+
+        // padding: 0 20px;
+
+        &-top {
+            position: relative;
+
+
+            &-title {
+                position: absolute;
+                content: "";
+                font-size: 14px;
+                left: 13px;
+                top: 45px;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 139px;
+                height: 51px;
+                top: 30px;
+                background: #fff;
+                border-radius: 0px 30px 30px 0px;
+            }
+
+            // &::after {
+            //     position: absolute;
+            //     content: "";
+            // }
+
+            &-img {
+                width: 100%;
+                margin-bottom: 18px;
+            }
+
+        }
+
+
+
+        &-title {
+            font-size: 18px;
+            font-weight: 700;
+            width: 296px;
+            line-height: 25px;
+            margin-bottom: 20px;
+
+        }
+
+        &-text-line {
+            display: flex;
+            vertical-align: top;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+            margin-bottom: 16px;
+        }
+
+        &-text-line img {
+            margin-right: 8px;
+        }
+
+        &-price {
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+    }
+
+    &__button {
+        position: relative;
+        font-size: 16px;
         font-weight: 400;
+        letter-spacing: -0.5px;
+        padding: 0 0;
+        padding: 14px 58px 14px 36px;
+
+        &::after {
+            position: absolute;
+            // content: "fff"l
+            content: &#8594;
+            // background-image: url(../img/svg/arrow-right.svg); // Потом вставить свгэшку в HTML
+            // right: 20px;
+            width: 12px;
+            height: 12px;
+            color: #000;
+
+        }
+
     }
 
-    &-img {
-        margin-right: 14px;
-    }
 }
 
-.atv__rout {
-    padding-bottom: 300px;
-    position: relative;
-    background: #EDF1F7;
-    ;
-
-    &-pref {
-        position: absolute;
-        content: "";
-        font-size: 14px;
-        left: 13px;
-        top: 45px;
-    }
-
-    &-img {
-        // width: 100%;
-        // height: 100%;
-        width: 100%;
-        margin-bottom: 17px;
-        overflow-x: hidden;
-        // height: 239px;
-    }
-
-    &::before {
-        position: absolute;
-        content: "";
-        width: 139px;
-        height: 51px;
-        top: 30px;
-        background: #fff;
-        border-radius: 0px 30px 30px 0px;
-    }
-
-    &::after {
-        position: absolute;
-        content: "";
-    }
-
-    &-title {
-        font-size: 18px;
-        font-weight: 700;
-        width: 296px;
-        line-height: 25px;
-        margin-bottom: 20px;
-        // text-align: center;
-
-    }
-}
-
-.route-wrap--mb {
-    padding: 0 20px;
-}
-
-.program-item {
+.temp-wrapper {
     display: flex;
-    vertical-align: top;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19px;
-
+    margin-top: 30px;
 }
+
 
 // Конец бургера //////////////////////
 
@@ -429,8 +460,8 @@ body {
         }
 
         &__button-desktop {
-            text-align: left;
-            padding-left: 6px;
+            padding-right: 78px;
+            padding-left: 70px;
             position: relative;
             margin-bottom: 196px;
 
@@ -439,7 +470,7 @@ body {
                 content: "";
                 width: 305px;
                 height: 80px;
-                left: -1px;
+                left: -9px;
                 top: -8px;
 
                 border: 1px solid #00B6F8;
@@ -448,17 +479,9 @@ body {
 
             }
 
-            .button {
-                padding: 20px 24px 22px 20px;
-                width: 292px;
-            }
         }
 
-        // &-slider {
-        //     max-width: 600px;
-        // }
     }
-
 
 
     .slider-img {
@@ -499,7 +522,9 @@ body {
             }
         }
     }
+
 }
+
 
 // @media (min-width: 1360px) {
 //     .container {
@@ -548,12 +573,3 @@ body {
 
 
 // @import "media";
-
-/*
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px
-) !default;
-*/

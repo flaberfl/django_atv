@@ -5,20 +5,23 @@
 
     <div class="category__title">Прокат квадроциклов</div>
 
-    <div class="atv__rental">
+    <div class="category__presents">
 
-        <div class="atv__rental-features">
-            <img class="features-img" src="{% static static_prefix|add:'../img/rout__img.png' %}" width="54px" alt="">
-            <p class="features-text">Более <b>15 видов</b> маршрутов</p>
+        <div class="category__presents-item">
+            <img class="category__presents-item-img" src="{% static static_prefix|add:'../img/rout__img.png' %}"
+                width="54px" alt="">
+            <p class="category__presents-item-text">Более <b>15 видов</b> маршрутов</p>
         </div>
 
-        <div class="atv__rental-features">
-            <img class="features-img" src="{% static static_prefix|add:'../img/price__img.png' %}" width="54px" alt="">
-            <p class="features-text">Цены от <b>2 500 рублей</b></p>
+        <div class="category__presents-item">
+            <img class="category__presents-item-img" src="{% static static_prefix|add:'../img/price__img.png' %}"
+                width="54px" alt="">
+            <p class="category__presents-item-text">Цены от <b>2 500 рублей</b></p>
         </div>
-        <div class=" atv__rental-features">
-            <img class="features-img" src="{% static static_prefix|add:'../img/plans__img.png' %}" width="54px" alt="">
-            <p class="features-text">Более <b>25 видов</b> снегоходов</p>
+        <div class=" category__presents-item">
+            <img class="category__presents-item-img" src="{% static static_prefix|add:'../img/plans__img.png' %}"
+                width="54px" alt="">
+            <p class="category__presents-item-text">Более <b>25 видов</b> снегоходов</p>
         </div>
 
     </div>
@@ -28,31 +31,46 @@
         <div class="category__item category__item--kvadro">
 
             <div class="category__item-top">
-                <div class="top-title">Квадроциклы</div>
+                <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
+                <div class="category__item-top-title">Квадроциклы</div>
             </div>
 
-            <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”</div>
+            <div class="container">
+                <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”</div>
 
-            <div class="category__item-text">
+                <div class="category__item-text">
 
-                <div class="category__item-text-line">
-                    <div></div>
-                    <p>Время маршрута: 1 час</p>
+                    <div class="category__item-text-line">
+                        <img src="{% static static_prefix|add:'../img/svg/gridicons_time.svg' %}" alt="">
+                        <p>Время маршрута: 1 час</p>
+                    </div>
+                    <div class="category__item-text-line">
+                        <img src="{% static static_prefix|add:'../img/svg/fa-solid_route.svg' %}" alt="">
+                        <p>Длинна маршрута: 20 км</p>
+                    </div>
+                    <div class="category__item-text-line">
+                        <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
+                        <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                    </div>
+
                 </div>
-                <div class="category__item-text-line">
-                    <div></div>
-                    <p>Длинна маршрута: 20 км</p>
+
+                <div class="temp-wrapper">
+                    <p class="category__item-price">2</p>
+
+                    <div class="button category__button">
+                        <a href="service__detail">О маршруте</a>
+                    </div>
+
+
+
                 </div>
-                <div class="category__item-text-line">
-                    <div></div>
-                    <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
-                </div>
+
+
 
             </div>
 
-            <p class="category__item-price">2 500 р</p>
 
-            <a class="button category__button" href="service__detail"></a>
 
 
         </div>
@@ -111,7 +129,10 @@
 
             <p class="category__item-price">2 500 р</p>
 
-            <a class="button category__button" href="service__detail"></a>
+            <div class="button category__button">
+                <a class="button category__button" href="service__detail"></a>
+            </div>
+
 
 
         </div>
@@ -138,7 +159,7 @@
             </div>
 
             <div class="program-item">
-                <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
+                <img src="{% static static_prefix|add:'../img/svg/fa-solid_route.svg' %}" alt="">
                 <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
             </div>
 

@@ -3,15 +3,20 @@ from django.shortcuts import render
 
 APP_NAME = os.path.basename(os.path.dirname(os.path.abspath(__file__)))
 
-SITE_NAME = 'site1.ru'
+# SITE_NAME = 'site1.ru'
 # SITE_NAME = 'site2.ru'
-# SITE_NAME = 'atv-rental2.ru'
+SITE_NAME = 'atv-rental2.ru'
 
 
 def simple_renderer(request, template_filename):
     template = "/".join([APP_NAME, SITE_NAME, template_filename])
-    context = {'static_prefix': "/".join(
-        [APP_NAME, SITE_NAME, template.rsplit('/', 2)[-1].rsplit('.', 2)[0], ''])}
+    context = {
+        'static_prefix':
+        "/".join([
+            APP_NAME, SITE_NAME,
+            template.rsplit('/', 2)[-1].rsplit('.', 2)[0], ''
+        ])
+    }
     return render(request, template, context)
 
 
