@@ -7,7 +7,7 @@
 
     <div class="category__presents">
 
-        <nav class="categoru__menu">
+        <!-- <nav class="category__menu">
             <ul>
                 <li>Квадроциклы</li>
                 <li>Снегоходы</li>
@@ -16,7 +16,7 @@
                 <li>Другое</li>
                 <li>Другое</li>
             </ul>
-        </nav>
+        </nav> -->
 
         <div class="category__presents-item">
             <img class="category__presents-item-img" src="{% static static_prefix|add:'../img/rout__img.png' %}"
@@ -29,13 +29,14 @@
                 width="54px" alt="">
             <p class="category__presents-item-text">Цены от <b>2 500 рублей</b></p>
         </div>
+
         <div class=" category__presents-item">
             <img class="category__presents-item-img" src="{% static static_prefix|add:'../img/plans__img.png' %}"
                 width="54px" alt="">
             <p class="category__presents-item-text">Более <b>25 видов</b> снегоходов</p>
         </div>
 
-    </div>
+    </div> <!-- /category__presents -->
 
     <div class="category__items">
 
@@ -46,7 +47,7 @@
                 <div class="category__item-top-title">Квадроциклы</div>
             </div>
 
-            <div class="container">
+            <div class="container category__item-box">
                 <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”</div>
 
                 <div class="category__item-text">
@@ -66,23 +67,54 @@
 
                 </div>
 
-                <div class="temp-wrapper">
-                    <p class="category__item-price">2</p>
-
+                <div class="category__item-bottom">
+                    <p class="category__item-price">2 500 р</p>
                     <div class="button category__button">
                         <a href="service__detail">О маршруте</a>
                     </div>
 
-
-
                 </div>
-
-
 
             </div>
 
+        </div>
 
+        <div class="category__item category__item--kvadro">
 
+            <div class="category__item-top">
+                <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
+                <div class="category__item-top-title">Квадроциклы</div>
+            </div>
+
+            <div class="container category__item-box">
+                <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”</div>
+
+                <div class="category__item-text">
+
+                    <div class="category__item-text-line">
+                        <img src="{% static static_prefix|add:'../img/svg/gridicons_time.svg' %}" alt="">
+                        <p>Время маршрута: 1 час</p>
+                    </div>
+                    <div class="category__item-text-line">
+                        <img src="{% static static_prefix|add:'../img/svg/fa-solid_route.svg' %}" alt="">
+                        <p>Длинна маршрута: 20 км</p>
+                    </div>
+                    <div class="category__item-text-line">
+                        <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
+                        <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                    </div>
+
+                </div>
+
+                <div class="category__item-bottom">
+                    <p class="category__item-price">2 500 р</p>
+                    <div class="button category__button">
+                        <a href="service__detail">О маршруте</a>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -111,16 +143,17 @@
 </section>
 
 <section class="category">
+
     <div class="category__items">
 
-        <div class="category__item category__item--snowmobile">
+        <div class="category__item category__item--kvadro">
 
             <div class="category__item-top">
                 <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
                 <div class="category__item-top-title">Квадроциклы</div>
             </div>
 
-            <div class="container">
+            <div class="container category__item-box">
                 <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”</div>
 
                 <div class="category__item-text">
@@ -140,84 +173,57 @@
 
                 </div>
 
-                <div class="temp-wrapper">
-                    <p class="category__item-price">2</p>
-
+                <div class="category__item-bottom">
+                    <p class="category__item-price">2 500 р</p>
                     <div class="button category__button">
                         <a href="service__detail">О маршруте</a>
                     </div>
 
-
-
                 </div>
-
-
 
             </div>
 
+        </div>
 
+        <div class="category__item category__item--kvadro">
 
+            <div class="category__item-top">
+                <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
+                <div class="category__item-top-title">Квадроциклы</div>
+            </div>
+
+            <div class="container category__item-box">
+                <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”</div>
+
+                <div class="category__item-text">
+
+                    <div class="category__item-text-line">
+                        <img src="{% static static_prefix|add:'../img/svg/gridicons_time.svg' %}" alt="">
+                        <p>Время маршрута: 1 час</p>
+                    </div>
+                    <div class="category__item-text-line">
+                        <img src="{% static static_prefix|add:'../img/svg/fa-solid_route.svg' %}" alt="">
+                        <p>Длинна маршрута: 20 км</p>
+                    </div>
+                    <div class="category__item-text-line">
+                        <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
+                        <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                    </div>
+
+                </div>
+
+                <div class="category__item-bottom">
+                    <p class="category__item-price">2 500 р</p>
+                    <div class="button category__button">
+                        <a href="service__detail">О маршруте</a>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
     </div>
+
 </section>
-
-
-<!-- <div class="route-wrap--mb">
-        <div class="wrap-route-title">
-            <p class="atv__rout-title">Название маршрута “Топовый в своём роде маршрут”</p>
-        </div>
-
-        <div class="atv__rout-program">
-
-            <div class="program-item">
-                <img src="{% static static_prefix|add:'../img/svg/gridicons_time.svg' %}" alt="">
-                <p>Время маршрута: 1 час</p>
-            </div>
-
-            <div class="program-item">
-                <img src="{% static static_prefix|add:'../img/svg/fa-solid_route.svg' %}" alt="">
-                <p>Длинна маршрута: 20 км</p>
-            </div>
-
-            <div class="program-item">
-                <img src="{% static static_prefix|add:'../img/svg/fa-solid_route.svg' %}" alt="">
-                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
-            </div>
-
-        </div>
-
-        <div class=" tv__rout-about">
-            <div class="atv__rout-price"></div>
-            <a href="" class="atv__rout-link"></a>
-        </div>
-    </div> -->
-
-
-
-
-
-
-<!-- <h2 class="title title--align_center title--pb category__title">
-            {% with service_type_data_list|length as n_service_type_data_list %}
-            {{ n_service_type_data_list }} {{ n_service_type_data_list|rupluralize:"вид,вида,видов" }} катаний
-            {% endwith %}
-        </h2>
-        <div class="category__items">
-            {% for service_type in '123' %}
-            <div class="category__item category__item--kvadro" style="background-image: url({{ service_type.page_data.custom_photos.service_type_bg_image.big }});">
-                <div class="category__item-title fl">Вид услуги {{ service_type }}</div>
-                <div class="category__item-text">
-                    <div class="text-line">Количество маршрутов: 5</div>
-                </div>
-                <div class="category__item-price">
-                    от 2000 руб
-
-                </div>
-                <a href="{% url 'service_list' %}" class="button category__button">
-                    Посмотреть маршруты
-                </a>
-            </div>
-            {% endfor %}
-        </div> -->
