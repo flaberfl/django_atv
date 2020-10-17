@@ -454,6 +454,10 @@ template {
   border: 1px solid black;
 }
 
+.instruction {
+  margin: 0 auto;
+}
+
 .instruction__items {
   display: -webkit-box;
   display: -webkit-flex;
@@ -467,17 +471,23 @@ template {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 7px;
 }
 
 .instruction__item {
   text-align: center;
+  margin-bottom: 43px;
+}
+
+.instruction__item-img {
+  margin-bottom: 18px;
 }
 
 .instruction__item-text {
   font-size: 14px;
   font-weight: 400;
-  width: 150px;
+  line-height: 20px;
+  width: 156px;
   text-align: center;
 }
 
