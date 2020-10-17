@@ -1,10 +1,6 @@
 @import "vars";
 @import "libs";
 @import "fonts";
-@import "instruction";
-
-
-
 
 html {
     box-sizing: border-box;
@@ -33,91 +29,59 @@ body {
     margin: 0 auto;
 }
 
+.descr {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -1.2px;
+    margin-bottom: 55px;
+    width: 170px;
+}
 
-.header {
+.info {
+    // visibility: hidden;
+    display: none;
+    position: relative;
 
-    &__top-inner {
-        display: flex;
-        justify-content: space-between;
-        padding-left: 18px;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        background: linear-gradient(223.45deg, #00B6F8 15.38%, #03D4F9 86.59%);
+        box-shadow: 0px 0px 4px #01C4F8;
+        left: -42px;
+        top: 14px;
     }
 
-    &__logo {
-        margin-top: 39px;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid #00B6F8;
+        left: -47.6px;
+        top: 9px;
     }
+}
 
-    &__descr-text {
-        font-weight: 400;
-        margin-top: 5px;
-        font-size: 18px;
-        letter-spacing: -1.2px;
-        margin-bottom: 55px;
-        width: 170px;
-    }
+.phone {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 34px;
+    letter-spacing: -0.6px;
 
-    &__info {
-        visibility: hidden;
-        position: relative;
-
-        &::before {
-            position: absolute;
-            content: "";
-            width: 33px;
-            height: 33px;
-            border-radius: 50%;
-            background: linear-gradient(223.45deg, #00B6F8 15.38%, #03D4F9 86.59%);
-            box-shadow: 0px 0px 4px #01C4F8;
-            left: -42px;
-            top: 14px;
-        }
-
-        &::after {
-            position: absolute;
-            content: "";
-            width: 43px;
-            height: 43px;
-            border-radius: 50%;
-            background-color: transparent;
-            border: 1px solid #00B6F8;
-            left: -47.6px;
-            top: 9px;
-        }
-    }
-
-    &__phone {
-        font-size: 25px;
-        font-weight: 800;
-        line-height: 34px;
-        letter-spacing: -0.6px;
-    }
-
-    &__phone-subtitle {
+    &-subtitle {
         font-size: 12px;
+        font-weight: 400;
         line-height: 16px;
         letter-spacing: -0.8px;
         padding-left: 6px;
         margin: 0;
     }
 
-    &__title {
-        font-size: 25px;
-        font-weight: 800;
-        line-height: 34px;
-        letter-spacing: -0.3px;
-        // width: 284px;
-        margin-bottom: 25px;
-    }
-
-    &__advantages {
-        padding-left: 35px;
-        margin-bottom: 16px;
-    }
-
-
-    &__text-wrap {
-        display: flex;
-        justify-content: center;
-    }
 }
 
 .advantages {
@@ -295,6 +259,7 @@ body {
                 width: 110px;
                 font-size: 14px;
                 font-weight: 400;
+                line-height: 20px;
             }
 
             &-img {
@@ -366,13 +331,14 @@ body {
             margin-top: 30px;
             padding-bottom: 30px;
             justify-content: space-between;
+            max-width: 283px;
         }
 
         &-price {
             font-size: 16px;
             font-weight: 800;
-            padding-left: 23px;
-            padding-top: 16px;
+            padding-left: 21px;
+            padding-top: 14px;
         }
     }
 
@@ -414,6 +380,14 @@ body {
     }
 }
 
+// .footer {
+
+//     background-color: #EDF1F7;
+
+//     &__info {
+//         display: block;
+//     }
+// }
 
 // Конец бургера //////////////////////
 
@@ -423,14 +397,9 @@ body {
         background-color: #EDF1F7;
         overflow-x: hidden;
 
-        // padding-bottom: 185px;
-
         &__top-inner {
-            // display: flex;
-            // justify-content: space-between;
-            padding: 0 40px 0 40px;
-            // align-items: center;
 
+            padding: 0 40px 0 40px;
         }
 
         &__logo {
@@ -438,22 +407,21 @@ body {
             vertical-align: middle;
         }
 
-        &__descr-text {
+        &__descr {
             margin-top: 0;
         }
 
         &__info {
-            visibility: visible;
+            display: block;
             margin-top: 22px;
         }
 
         &__content {
+            display: flex;
+            justify-content: space-between;
             margin-top: 10px;
             padding-left: 157px;
             padding-top: 41px;
-            // padding-bottom: 45px;
-            display: flex;
-            justify-content: space-between;
         }
 
         &__title {
@@ -463,7 +431,6 @@ body {
             line-height: 42px;
             width: 626px;
             margin-bottom: 50px;
-
         }
 
         &__advantages {
@@ -471,9 +438,9 @@ body {
         }
 
         &__button-desktop {
+            position: relative;
             padding-right: 78px;
             padding-left: 70px;
-            position: relative;
             margin-bottom: 196px;
 
             &::before {
@@ -487,14 +454,14 @@ body {
                 border: 1px solid #00B6F8;
                 box-sizing: border-box;
                 border-radius: 40px;
-
             }
-
         }
-
     }
 
     .category {
+
+        padding-top: 148px;
+
         &__item {
             display: flex;
             justify-content: space-between;
@@ -509,8 +476,6 @@ body {
 
     .slider-img {
         display: block;
-        // overflow-x: hidden;
-
     }
 
     .logo {
@@ -531,7 +496,6 @@ body {
         }
 
         &__bottom {
-            // display: inline-block;
             display: flex;
             justify-content: space-between;
             max-width: 676px;
@@ -540,21 +504,20 @@ body {
 
             &-item {
                 margin-right: 10px;
-                // display: block;
             }
         }
     }
-
-    .category {
-        padding-top: 148px;
-    }
-
-    &__presents {
-        display: flex;
-        justify-content: space-between;
-    }
-
 }
+
+
+
+
+@import "header";
+@import "instruction";
+@import "gift";
+@import "seo";
+@import "footer";
+
 
 
 // @media (min-width: 1360px) {

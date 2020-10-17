@@ -1,0 +1,27 @@
+.footer {
+
+    background-color: #EDF1F7;
+
+    &__content {
+        display: flex;
+        flex-flow: wrap;
+        padding-top: 38px;
+        max-width: 320px;
+        margin: 0 auto;
+
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    &__info {
+        display: block;
+        margin-left: 54px;
+        margin-bottom: 27px;
+    }
+
+}

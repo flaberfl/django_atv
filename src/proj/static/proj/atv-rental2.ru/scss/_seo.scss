@@ -1,0 +1,25 @@
+.seo {
+
+    padding-top: 20px;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 800;
+    }
+
+    &__content {
+
+        &-img {
+            width: 100%;
+            margin-bottom: 45px;
+        }
+
+        &-description {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+            margin-bottom: 83px;
+        }
+    }
+
+}

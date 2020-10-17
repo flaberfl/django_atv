@@ -1,0 +1,83 @@
+.gift {
+    padding-top: 67px;
+
+    &__title {
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 34px;
+        margin-bottom: 27px;
+    }
+
+    &__info {
+        position: relative;
+        background-color: #EDF1F7;
+        text-align: center;
+        padding-top: 52px;
+
+        &-img {
+            background-color: #fff;
+            padding-top: 31px;
+        }
+
+        &-text {
+            position: absolute;
+            font-size: 9px;
+            font-weight: 400;
+            line-height: 12px;
+            background-color: #fff;
+            width: 144px;
+            left: 50%;
+            bottom: 55px;
+            transform: translateX(-50%);
+            text-align: start;
+        }
+    }
+
+    &__electron {
+        background-color: #EDF1F7;
+        padding-top: 15px;
+        padding-bottom: 38px;
+
+        &-title {
+            margin-bottom: 11px;
+        }
+
+        &-text {
+            width: 245px;
+        }
+    }
+
+    &__print-card {
+        padding-top: 51px;
+
+        &-img {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        &-title {
+            margin-bottom: 13px;
+        }
+
+        &-text {
+            width: 260px;
+        }
+    }
+
+    &-title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19px;
+        padding-left: 15px;
+    }
+
+    &-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        padding-left: 15px;
+        // width: 245px;
+
+    }
+
+}
