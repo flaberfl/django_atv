@@ -1,32 +1,27 @@
+{% load static %}
 <section class="instruction">
+
     <div class="container">
-        <h2 class="title title--align_center title--pb instruction__title">Как записаться на катания </h2>
-        <div class="subtitle">Необходимо всего несколько шагов!</div>
         <div class="instruction__items">
+
             <div class="instruction__item">
-                <div class="instruction__item-step">1</div>
-                <div class="instruction__item-text">
-                    Выберите маршрут, который вам понравился
-                </div>
+                <img src="{% static static_prefix|add:'../img/svg/p-item-1.svg' %}" alt="">
+                <p class="instruction__item-text">Выбираете маршрут на нашем сайте</p>
             </div>
+
             <div class="instruction__item">
-                <div class="instruction__item-step">2</div>
-                <div class="instruction__item-text">
-                    Выберите сколько вас будет человек на катании
-                </div>
+                <img src="{% static static_prefix|add:'../img/svg/p-item-2.svg' %}" alt="">
+                <p class="instruction__item-text">Бронируете маршрут онлайн</p>
             </div>
+
             <div class="instruction__item">
-                <div class="instruction__item-step">3</div>
-                <div class="instruction__item-text">
-                    Укажите удобную вам дату и время для катаний
-                </div>
+                <img src="{% static static_prefix|add:'../img/svg/p-item-3.svg' %}" alt="">
+                <p class="instruction__item-text">Получаете онлайн билет на ваш телефон</p>
             </div>
-            <div class="instruction__item">
-                <div class="instruction__item-step">4</div>
-                <div class="instruction__item-text">
-                    Внесите часть предоплаты на сайте и получите номер брони
-                </div>
-            </div>
+
         </div>
     </div>
+
+
+
 </section>

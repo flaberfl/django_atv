@@ -1,0 +1,23 @@
+.instruction {
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #EDF1F7;
+        justify-content: space-around;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &__item {
+
+        text-align: center;
+
+        &-text {
+            font-size: 14px;
+            font-weight: 400;
+            width: 150px;
+            text-align: center;
+        }
+    }
+}

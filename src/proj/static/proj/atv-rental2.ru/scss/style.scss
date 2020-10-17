@@ -1,7 +1,7 @@
 @import "vars";
 @import "libs";
 @import "fonts";
-// @import "tabs;
+@import "instruction";
 
 
 
@@ -300,22 +300,13 @@ body {
             &-img {
                 margin-right: 14px;
             }
-
         }
-
-    }
-
-    &__items {
-        background-color: #EDF1F7;
-        position: relative;
-        z-index: -1;
     }
 
     &__item {
 
         &-top {
             position: relative;
-
 
             &-title {
                 position: absolute;
@@ -335,14 +326,18 @@ body {
                 border-radius: 0px 30px 30px 0px;
             }
 
-
             &-img {
                 width: 100%;
-                margin-bottom: 18px;
             }
-
         }
 
+        &-box {
+            position: relative;
+            padding-top: 18px;
+            margin-bottom: 50px;
+            background-color: #EDF1F7;
+            z-index: -1;
+        }
 
 
         &-title {
@@ -369,7 +364,7 @@ body {
         &-bottom {
             display: flex;
             margin-top: 30px;
-            margin-bottom: 20px;
+            padding-bottom: 30px;
             justify-content: space-between;
         }
 
@@ -379,7 +374,6 @@ body {
             padding-left: 23px;
             padding-top: 16px;
         }
-
     }
 
     &__button {
@@ -389,8 +383,6 @@ body {
         letter-spacing: -0.5px;
         padding: 0 0;
         padding: 14px 58px 14px 36px;
-
-
 
         &::after {
             position: absolute;
@@ -409,14 +401,12 @@ body {
             width: 200px;
             height: 50px;
             background: #fff;
-            // background: red;
             border-radius: 36px 0px 0px 36px;
             top: 50%;
             right: 80px;
             transform: translateY(-50%);
             z-index: -1;
         }
-
     }
 
     &__menu {
@@ -528,7 +518,6 @@ body {
 
             margin-right: 12px;
         }
-
     }
 
     .menu {
