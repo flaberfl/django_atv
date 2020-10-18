@@ -29,6 +29,8 @@ body {
     margin: 0 auto;
 }
 
+/// Элементы шапки-футера ///
+
 .descr {
     font-weight: 400;
     font-size: 18px;
@@ -84,41 +86,7 @@ body {
 
 }
 
-.advantages {
-
-    &__item {
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: -0.06em;
-        position: relative;
-
-        &::before {
-            display: block;
-            position: absolute;
-            content: "";
-            width: 13px;
-            height: 13px;
-            border-radius: 50%;
-            top: 6px;
-            left: -32px;
-            background: linear-gradient(223.45deg, #00B6F8 15.38%, #03D4F9 86.59%);
-            box-shadow: 0px 0px 4px #01C4F8;
-        }
-    }
-
-    &__bottom {
-        margin-top: 30px;
-        padding-left: 7px;
-        margin-bottom: 58px;
-
-        &-item {
-            font-size: 16px;
-            line-height: 26px;
-            font-weight: 400;
-            letter-spacing: -0.9px;
-        }
-    }
-}
+/// Основная кнопка ///
 
 .button {
     display: inline-block;
@@ -133,6 +101,8 @@ body {
     box-shadow: 0px 0px 4px #01C4F8;
     border-radius: 36px;
 }
+
+/// Бургер меню ///
 
 .menu {
 
@@ -205,10 +175,6 @@ body {
     }
 }
 
-.slider-img {
-    display: none;
-}
-
 // Начало бургера  //////////////////
 
 #menu__toggle {
@@ -234,336 +200,13 @@ body {
     left: 0;
 }
 
-///// Category ///////////////////////
-
-.category {
-
-    &__title {
-        font-size: 25px;
-        font-weight: 800;
-        letter-spacing: -0.2px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    &__presents {
-        padding-left: 17px;
-        margin-bottom: 42px;
-
-        &-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-
-            &-text {
-                width: 110px;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 20px;
-            }
-
-            &-img {
-                margin-right: 14px;
-            }
-        }
-    }
-
-    &__item {
-
-        &-top {
-            position: relative;
-
-            &-title {
-                position: absolute;
-                content: "";
-                font-size: 14px;
-                left: 13px;
-                top: 45px;
-            }
-
-            &::before {
-                position: absolute;
-                content: "";
-                width: 139px;
-                height: 51px;
-                top: 30px;
-                background: #fff;
-                border-radius: 0px 30px 30px 0px;
-            }
-
-            &-img {
-                width: 100%;
-            }
-        }
-
-        &-box {
-            position: relative;
-            padding-top: 18px;
-            margin-bottom: 50px;
-            background-color: #EDF1F7;
-            z-index: -1;
-        }
-
-
-        &-title {
-            font-size: 18px;
-            font-weight: 700;
-            width: 296px;
-            line-height: 25px;
-            margin-bottom: 20px;
-        }
-
-        &-text-line {
-            display: flex;
-            vertical-align: top;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 19px;
-            margin-bottom: 16px;
-        }
-
-        &-text-line img {
-            margin-right: 8px;
-        }
-
-        &-bottom {
-            display: flex;
-            margin-top: 30px;
-            padding-bottom: 30px;
-            justify-content: space-between;
-            max-width: 283px;
-        }
-
-        &-price {
-            font-size: 16px;
-            font-weight: 800;
-            padding-left: 21px;
-            padding-top: 14px;
-        }
-    }
-
-    &__button {
-        position: relative;
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: -0.5px;
-        padding: 0 0;
-        padding: 14px 58px 14px 36px;
-
-        &::after {
-            position: absolute;
-            content: "";
-            background-image: url(../img/svg/arr-rightn.svg);
-            width: 18px;
-            height: 18px;
-            top: 53%;
-            right: 30px;
-            transform: translateY(-50%);
-        }
-
-        &::before {
-            position: absolute;
-            content: "";
-            width: 200px;
-            height: 50px;
-            background: #fff;
-            border-radius: 36px 0px 0px 36px;
-            top: 50%;
-            right: 80px;
-            transform: translateY(-50%);
-            z-index: -1;
-        }
-    }
-
-    &__menu {
-        display: none;
-    }
-}
-
-// .footer {
-
-//     background-color: #EDF1F7;
-
-//     &__info {
-//         display: block;
-//     }
-// }
-
 // Конец бургера //////////////////////
 
-@media (min-width: 768px) {
-
-    .header {
-        background-color: #EDF1F7;
-        overflow-x: hidden;
-
-        &__top-inner {
-
-            padding: 0 40px 0 40px;
-        }
-
-        &__logo {
-            display: flex;
-            vertical-align: middle;
-        }
-
-        &__descr {
-            margin-top: 0;
-        }
-
-        &__info {
-            display: block;
-            margin-top: 22px;
-        }
-
-        &__content {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
-            padding-left: 157px;
-            padding-top: 41px;
-        }
-
-        &__title {
-            font-size: 32px;
-            font-weight: 800;
-            letter-spacing: -0.3px;
-            line-height: 42px;
-            width: 626px;
-            margin-bottom: 50px;
-        }
-
-        &__advantages {
-            margin-bottom: 46px;
-        }
-
-        &__button-desktop {
-            position: relative;
-            padding-right: 78px;
-            padding-left: 70px;
-            margin-bottom: 196px;
-
-            &::before {
-                position: absolute;
-                content: "";
-                width: 305px;
-                height: 80px;
-                left: -9px;
-                top: -8px;
-
-                border: 1px solid #00B6F8;
-                box-sizing: border-box;
-                border-radius: 40px;
-            }
-        }
-    }
-
-    .category {
-
-        padding-top: 148px;
-
-        &__item {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        &__title {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-
-
-    .slider-img {
-        display: block;
-    }
-
-    .logo {
-        &__img {
-
-            margin-right: 12px;
-        }
-    }
-
-    .menu {
-        display: none;
-    }
-
-    .advantages {
-
-        &__item {
-            line-height: 28px;
-        }
-
-        &__bottom {
-            display: flex;
-            justify-content: space-between;
-            max-width: 676px;
-            padding-left: 8px;
-            letter-spacing: -0.9px;
-
-            &-item {
-                margin-right: 10px;
-            }
-        }
-    }
-}
-
-
-
-
 @import "header";
+@import "advantages";
+@import "category";
 @import "instruction";
 @import "gift";
 @import "seo";
 @import "footer";
-
-
-
-// @media (min-width: 1360px) {
-//     .container {
-//         margin: 0 auto;
-//     }
-// }
-
-// .logo {
-//     &__img {
-//         width: 90px;
-//         height: 44px;
-//     }
-// }
-
-// .svg-border-mask {
-//     mask-border: url(../img/slider/stampTiles.svg);
-//     //mask-border: url(http://127.0.0.1:5500/build/img/slider/stampTiles.svg);
-// }
-
-
-// .header-decor {
-//     order: 2;
-//     min-height: 400px;
-//     height: 300px;
-//     width: 300px;
-//     display: flex;
-//     align-items: center;
-// }
-
-// .header-decor--bg {
-//     background-image: url(../img/header_decore.svg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-// }
-
-// .header-slider,
-// .header-image {
-//     left: -50px;
-//     position: relative;
-// }
-
-
-// .subtitle {}
-
-
-
-// @import "media";
+@import "media";

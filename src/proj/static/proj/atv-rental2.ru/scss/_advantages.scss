@@ -1,0 +1,35 @@
+.advantages {
+
+    &__item {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.06em;
+        position: relative;
+
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            top: 6px;
+            left: -32px;
+            background: linear-gradient(223.45deg, #00B6F8 15.38%, #03D4F9 86.59%);
+            box-shadow: 0px 0px 4px #01C4F8;
+        }
+    }
+
+    &__bottom {
+        margin-top: 30px;
+        padding-left: 7px;
+        margin-bottom: 58px;
+
+        &-item {
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+            letter-spacing: -0.9px;
+        }
+    }
+}

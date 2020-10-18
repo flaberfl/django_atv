@@ -15,7 +15,6 @@
         font-weight: 800;
         line-height: 34px;
         letter-spacing: -0.3px;
-        // width: 284px;
         margin-bottom: 25px;
     }
 
@@ -24,9 +23,16 @@
         margin-bottom: 16px;
     }
 
+    &__button-wrap {
+        text-align: center;
+    }
 
     &__text-wrap {
         display: flex;
         justify-content: center;
+    }
+
+    &__img {
+        display: none;
     }
 }
