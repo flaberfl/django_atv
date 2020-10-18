@@ -26,7 +26,7 @@ body {
 
 .container {
     padding: 0 20px;
-    margin: 0 auto;
+    // margin: 0 auto;
 }
 
 /// Элементы шапки-футера ///
@@ -198,6 +198,32 @@ body {
 #menu__toggle:checked~.menu__box {
     visibility: visible;
     left: 0;
+}
+
+.sidebar {
+
+    margin-top: 81px;
+    margin-right: 99px;
+
+    &__link {
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+        padding: 28px 112px 28px 123px;
+
+        &:hover {
+            background: #EDF1F7;
+            // opacity: 0.5;
+            color: black;
+            transition: all 0.5s;
+
+        }
+
+        &-active {
+            background: #EDF1F7;
+        }
+    }
 }
 
 // Конец бургера //////////////////////
