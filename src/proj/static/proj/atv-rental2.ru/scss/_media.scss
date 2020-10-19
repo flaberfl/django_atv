@@ -183,12 +183,15 @@
         &__button-wrap {
             text-align: left;
         }
-
     }
-
 }
 
 @media (min-width: 1300px) {
+
+    body {
+        max-width: 1366px;
+    }
+
     .header {
         &__title {
             text-align: left;
@@ -342,7 +345,6 @@
                     height: 211px;
                 }
             }
-
         }
     }
 
@@ -351,15 +353,36 @@
 
         &__title {
             margin-bottom: 60px;
+            padding-left: 0;
         }
 
         &__content {
 
-            &-img {
-                width: 50%;
+            &-description {
+                padding-left: 0;
+                margin-bottom: 94px;
             }
         }
-
     }
 
+    .footer {
+
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            min-height: 146px;
+            max-width: 100%;
+        }
+
+        &__logo {
+            order: 0;
+            margin: 50px 0 0 33px;
+        }
+
+        &__info {
+            margin: 0 40px 0 0;
+        }
+    }
 }
