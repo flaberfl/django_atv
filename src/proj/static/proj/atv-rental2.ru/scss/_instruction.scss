@@ -5,11 +5,11 @@
     &__items {
         display: flex;
         flex-wrap: wrap;
-        // justify-content: space-between;
         background-color: #EDF1F7;
         justify-content: space-around;
         padding-top: 50px;
         padding-bottom: 7px;
+
     }
 
     &__item {

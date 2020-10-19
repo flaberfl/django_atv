@@ -6,6 +6,7 @@
         font-weight: 800;
         line-height: 34px;
         margin-bottom: 27px;
+        padding-left: 20px;
     }
 
     &__info {
@@ -56,10 +57,21 @@
         }
 
         &-title {
+
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 19px;
+
             margin-bottom: 13px;
+            padding-left: 35px; // Потом оптимизирую
         }
 
         &-text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19px;
+            padding-left: 35px;
+
             width: 260px;
         }
     }

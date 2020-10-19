@@ -1,53 +1,43 @@
 {% load static %}
 <section class="gift" id="gift">
-    <div class="container">
 
+    <div class="wrapper">
         <div class="gift__title">Подарочные сертификаты</div>
-
-    </div>
-
-    <div class="gift__info">
-
-        <div class="gift__info-img">
-            <img src="{% static static_prefix|add:'../img/gitft-img.png' %}" alt="">
+        <div class="gift__content">
+            <div class="gift__column-left">
+                <div class="gift__info">
+                    <div class="gift__info-img">
+                        <img src="{% static static_prefix|add:'../img/gitft-img.png' %}" alt="">
+                    </div>
+                    <div class="gift__info-text">
+                        Поздравляем, вам подарили подарочный набор “Сюрприз”. Виктор поздравляет вас: “Дорогой друг,
+                        поздравляю
+                        тебя с днём твоего рождения!”
+                    </div>
+                </div>
+                <div class="gift__electron">
+                    <div class="container">
+                        <div class="gift-title gift__electron-title">Электронный сертификат в мессенджер</div>
+                        <p class="gift-text gift__electron-text">Электронный сертификат может быть отправлен в соц. сети
+                            либо на
+                            E-mail
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="gift__column-right">
+                <div class="gift__print-card">
+                    <img class="gift__print-card-img" src="{% static static_prefix|add:'../img/print-card-img.jpg' %}"
+                        alt="">
+                    <!-- <div class="container"> -->
+                    <div class="gift__print-card-title">Печатная открытка в PDF</div>
+                    <p class="gift__print-card-text">Открытка придёт к вам в виде PDF файла. Вы сможете её
+                        распечатать
+                        и подарить</p>
+                </div>
+            </div>
         </div>
-
-        <div class="gift__info-text">
-            Поздравляем, вам подарили подарочный набор “Сюрприз”. Виктор поздравляет вас: “Дорогой друг, поздравляю
-            тебя с днём твоего рождения!”
-        </div>
-
+    </div>
     </div>
 
-
-    <div class="gift__electron">
-        <div class="container">
-            <div class="gift-title gift__electron-title">Электронный сертификат в мессенджер</div>
-            <p class="gift-text gift__electron-text">Электронный сертификат может быть отправлен в соц. сети либо на
-                E-mail
-            </p>
-        </div>
-    </div>
-
-
-    <div class="gift__print-card">
-        <img class="gift__print-card-img" src="{% static static_prefix|add:'../img/print-card-img.jpg' %}" alt="fefef">
-
-        <div class="container">
-            <div class="gift-title gift__print-card-title">Печатная открытка в PDF</div>
-            <p class="gift-text gift__print-card-text">Открытка придёт к вам в виде PDF файла. Вы сможете её распечатать
-                и подарить</p>
-        </div>
-
-    </div>
-
-    <!-- <div class="gift__item gift__content">
-            <h2 class="title title--white gift__title">Подарочные сертификаты</h2>
-            <p class="gift__description">97% клиентов, которым подарили сертификат на катания остаются безумно
-                счастливыми от такого подарка</p>
-            <a href="#!" class="button gift__button gift__button__right sp-button__gift">Выбрать подарок</a>
-        </div> -->
-
-
-    </div>
 </section>

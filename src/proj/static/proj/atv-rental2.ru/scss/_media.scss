@@ -220,11 +220,8 @@
         display: flex;
         padding: 0;
         justify-content: space-between;
-        // justify-content: center;
-        // padding-top: 110px;
 
         &__content {
-            // padding-right: 96px; // Убираем
             margin-top: 110px;
         }
 
@@ -244,7 +241,6 @@
 
             &-item {
 
-                // flex-basis: 33%;
                 margin-right: 25px;
 
                 &-img {
@@ -265,12 +261,6 @@
                     height: 351px;
                 }
             }
-
-            // &-box {
-            //     padding-top: 38px;
-            //     padding-left: 42px;
-            //     padding-bottom: 10px;
-            // }
         }
     }
 
@@ -286,7 +276,90 @@
                 width: 200px;
                 height: 200px;
             }
+
+            &-text {
+                width: 190px;
+            }
         }
+    }
+
+    .gift {
+
+        padding-top: 104px;
+
+        &__title {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.4px;
+            padding-left: 0;
+            margin-bottom: 55px;
+        }
+
+        &__content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__info {
+            padding-left: 48px;
+            padding-right: 48px;
+            width: 400px;
+        }
+
+        &-title,
+        &-text {
+            padding-left: 26px;
+        }
+
+        &__electron {
+            padding-bottom: 74px;
+
+            &-text {
+                width: 270px;
+            }
+        }
+
+        &__column-right {
+            margin-right: 51px;
+        }
+
+        &__print {
+
+            &-card.container {
+                padding: 0;
+            }
+
+            &-card {
+
+                &-title,
+                &-text {
+                    padding-left: 0;
+                    width: 250px;
+                }
+
+                &-img {
+                    width: 301px;
+                    height: 211px;
+                }
+            }
+
+        }
+    }
+
+    .seo {
+        padding-top: 80px;
+
+        &__title {
+            margin-bottom: 60px;
+        }
+
+        &__content {
+
+            &-img {
+                width: 50%;
+            }
+        }
+
     }
 
 }

@@ -33,7 +33,7 @@ body {
     // Контейнер для правой половины
     max-width: 903px;
     // padding-right: 99px; c 992 включен
-    text-align: left;
+    margin-left: auto; // Это спасло меня ))
 }
 
 /// Элементы шапки-футера ///

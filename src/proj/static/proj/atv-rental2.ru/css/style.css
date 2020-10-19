@@ -484,7 +484,7 @@ body {
 
 .wrapper {
   max-width: 903px;
-  text-align: left;
+  margin-left: auto;
 }
 
 .descr {
@@ -985,6 +985,7 @@ body {
   font-weight: 800;
   line-height: 34px;
   margin-bottom: 27px;
+  padding-left: 20px;
 }
 
 .gift__info {
@@ -1038,10 +1039,18 @@ body {
 }
 
 .gift__print-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
   margin-bottom: 13px;
+  padding-left: 35px;
 }
 
 .gift__print-card-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  padding-left: 35px;
   width: 260px;
 }
 
@@ -1355,5 +1364,65 @@ body {
   .instruction__item-img {
     width: 200px;
     height: 200px;
+  }
+  .instruction__item-text {
+    width: 190px;
+  }
+  .gift {
+    padding-top: 104px;
+  }
+  .gift__title {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+    padding-left: 0;
+    margin-bottom: 55px;
+  }
+  .gift__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .gift__info {
+    padding-left: 48px;
+    padding-right: 48px;
+    width: 400px;
+  }
+  .gift-title, .gift-text {
+    padding-left: 26px;
+  }
+  .gift__electron {
+    padding-bottom: 74px;
+  }
+  .gift__electron-text {
+    width: 270px;
+  }
+  .gift__column-right {
+    margin-right: 51px;
+  }
+  .gift__print-card.container {
+    padding: 0;
+  }
+  .gift__print-card-title, .gift__print-card-text {
+    padding-left: 0;
+    width: 250px;
+  }
+  .gift__print-card-img {
+    width: 301px;
+    height: 211px;
+  }
+  .seo {
+    padding-top: 80px;
+  }
+  .seo__title {
+    margin-bottom: 60px;
+  }
+  .seo__content-img {
+    width: 50%;
   }
 }
