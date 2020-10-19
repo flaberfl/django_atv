@@ -29,6 +29,13 @@ body {
     // margin: 0 auto;
 }
 
+.wrapper {
+    // Контейнер для правой половины
+    max-width: 903px;
+    // padding-right: 99px; c 992 включен
+    text-align: left;
+}
+
 /// Элементы шапки-футера ///
 
 .descr {
@@ -202,8 +209,10 @@ body {
 
 .sidebar {
 
+    display: none;
+
     margin-top: 81px;
-    margin-right: 99px;
+    // margin-right: 188px; // Убрали
 
     &__link {
         display: block;
