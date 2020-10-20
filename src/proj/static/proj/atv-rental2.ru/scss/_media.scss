@@ -253,6 +253,11 @@
             }
         }
 
+        // &__other {
+        //     display: flex;
+        //     flex-direction: column;
+        // }
+
         &__item {
 
             margin-bottom: 30px;
@@ -288,7 +293,7 @@
 
     .gift {
 
-        padding-top: 104px;
+        padding-top: 24px;
 
         &__title {
             font-size: 32px;
