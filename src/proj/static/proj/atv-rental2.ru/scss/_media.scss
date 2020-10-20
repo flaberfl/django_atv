@@ -161,6 +161,11 @@
 
     .sidebar {
         display: block;
+
+        &__content {
+            position: sticky;
+            top: 0;
+        }
     }
 
     .wrapper {
@@ -253,10 +258,10 @@
             }
         }
 
-        // &__other {
-        //     display: flex;
-        //     flex-direction: column;
-        // }
+        &__items {
+            display: flex;
+            flex-direction: column;
+        }
 
         &__item {
 
@@ -269,10 +274,41 @@
                     height: 351px;
                 }
             }
+
+            &--kvadro-1 {
+                order: 0;
+            }
+
+            &--kvadro-2 {
+                order: 1;
+            }
+
+            &--kvadro-3 {
+                order: 2;
+            }
+
+            &--kvadro-4 {
+                order: 3;
+            }
+
+            &--kvadro-5 {
+                order: 4;
+            }
+
+            &--kvadro-6 {
+                order: 5;
+            }
+
+            &--kvadro-7 {
+                order: 6;
+            }
         }
+
     }
 
     .instruction {
+
+        order: 1;
 
         &__items {
             padding-top: 41px;
@@ -292,6 +328,8 @@
     }
 
     .gift {
+
+        order: 4;
 
         padding-top: 24px;
 
@@ -354,7 +392,7 @@
     }
 
     .seo {
-        padding-top: 80px;
+        padding-top: 4px;
 
         &__title {
             margin-bottom: 60px;
