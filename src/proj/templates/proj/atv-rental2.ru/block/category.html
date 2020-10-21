@@ -5,19 +5,19 @@
     <div class="category__sidebar sidebar">
         <div class="sidebar__content">
             <div class="sidebar__tabs">
-                <div class="sidebar__tab active" data-id="1">Квадроциклы</div>
-                <div class="sidebar__tab" data-id="2">Снегоходы</div>
-                <div class="sidebar__tab" data-id="3">Лошади</div>
-                <div class="sidebar__tab" data-id="4">Вид услуги</div>
-                <div class="sidebar__tab" data-id="5">Вид услуги</div>
-                <div class="sidebar__tab" data-id="6">Вид услуги</div>
+                <div class="sidebar__tab active" data-id="1"><a href="#">Квадрациклы</a></div>
+                <div class="sidebar__tab" data-id="2"><a href="category.html#abc">Снегоходы</a></div>
+                <div class="sidebar__tab" data-id="3"><a href="#">Лошади</a></div>
+                <div class="sidebar__tab" data-id="4"><a href="#">Вид услуги</a></div>
+                <div class="sidebar__tab" data-id="5"><a href="#">Вид услуги</a></div>
+                <div class="sidebar__tab" data-id="6"><a href="#">Вид услуги</a></div>
             </div>
         </div>
     </div>
 
 
     <div class="category__content">
-
+        <a name="abc" href=""></a>
         <div class="wrapper">
 
             <div class="category__title">Прокат квадроциклов</div>
@@ -44,49 +44,9 @@
 
             </div> <!-- /category__presents -->
 
-            <div class="category__items active-tab" id="1">
+            <div class="category__items category__items--kvadro active-tab" id="1">
 
-                <div class="category__item category__item--kvadro-1">
-
-                    <div class="category__item-top">
-                        <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
-                            alt="">
-                        <div class="category__item-top-title">Квадроциклы</div>
-                    </div>
-
-                    <div class="container category__item-box">
-                        <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”</div>
-
-                        <div class="category__item-text">
-
-                            <div class="category__item-text-line">
-                                <img src="{% static static_prefix|add:'../img/svg/gridicons_time.svg' %}" alt="">
-                                <p>Время маршрута: 1 час</p>
-                            </div>
-                            <div class="category__item-text-line">
-                                <img src="{% static static_prefix|add:'../img/svg/fa-solid_route.svg' %}" alt="">
-                                <p>Длинна маршрута: 20 км</p>
-                            </div>
-                            <div class="category__item-text-line">
-                                <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
-                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
-                            </div>
-
-                        </div>
-
-                        <div class="category__item-bottom">
-                            <p class="category__item-price">2 500 р</p>
-                            <div class="button category__button">
-                                <a href="service__detail">О маршруте</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="category__item category__item--kvadro-2">
+                <div class="category__item category__item--1">
 
                     <div class="category__item-top">
                         <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
@@ -126,7 +86,7 @@
 
                 </div>
 
-                <div class="category__item category__item--kvadro-3">
+                <div class="category__item category__item--2">
 
                     <div class="category__item-top">
                         <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
@@ -166,7 +126,7 @@
 
                 </div>
 
-                <div class="category__item category__item--kvadro-4">
+                <div class="category__item category__item--3">
 
                     <div class="category__item-top">
                         <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
@@ -206,7 +166,7 @@
 
                 </div>
 
-                <div class="category__item category__item--kvadro-5">
+                <div class="category__item category__item--4">
 
                     <div class="category__item-top">
                         <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
@@ -246,7 +206,7 @@
 
                 </div>
 
-                <div class="category__item category__item--kvadro-6">
+                <div class="category__item category__item--5">
 
                     <div class="category__item-top">
                         <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
@@ -286,7 +246,47 @@
 
                 </div>
 
-                <div class="category__item category__item--kvadro-7">
+                <div class="category__item category__item--6">
+
+                    <div class="category__item-top">
+                        <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
+                            alt="">
+                        <div class="category__item-top-title">Квадроциклы</div>
+                    </div>
+
+                    <div class="container category__item-box">
+                        <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”</div>
+
+                        <div class="category__item-text">
+
+                            <div class="category__item-text-line">
+                                <img src="{% static static_prefix|add:'../img/svg/gridicons_time.svg' %}" alt="">
+                                <p>Время маршрута: 1 час</p>
+                            </div>
+                            <div class="category__item-text-line">
+                                <img src="{% static static_prefix|add:'../img/svg/fa-solid_route.svg' %}" alt="">
+                                <p>Длинна маршрута: 20 км</p>
+                            </div>
+                            <div class="category__item-text-line">
+                                <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
+                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                            </div>
+
+                        </div>
+
+                        <div class="category__item-bottom">
+                            <p class="category__item-price">2 500 р</p>
+                            <div class="button category__button">
+                                <a href="service__detail">О маршруте</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="category__item category__item--7">
 
                     <div class="category__item-top">
                         <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
@@ -398,9 +398,9 @@
 
             </div>
 
-            <div class="category__items" id="2">
+            <div class="category__items category__items--snowmobile" id="2">
 
-                <div class="category__item category__item--kvadro-1">
+                <div class="category__item category__item--1">
 
                     <div class="category__item-top">
                         <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
@@ -409,8 +409,8 @@
                     </div>
 
                     <div class="container category__item-box">
-                        <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”
-                        </div>
+                        <div class="category__item-title">Название маршрута “Топовый в своём роде
+                            маршрут”</div>
 
                         <div class="category__item-text">
 
@@ -424,7 +424,8 @@
                             </div>
                             <div class="category__item-text-line">
                                 <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
-                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)
+                                </p>
                             </div>
 
                         </div>
@@ -441,17 +442,17 @@
 
                 </div>
 
-                <div class="category__item category__item--kvadro-2">
+                <div class="category__item category__item--2">
 
                     <div class="category__item-top">
                         <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
                             alt="">
-                        <div class="category__item-top-title">Квадроциклы</div>
+                        <div class="category__item-top-title">Снегоходы</div>
                     </div>
 
                     <div class="container category__item-box">
-                        <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”
-                        </div>
+                        <div class="category__item-title">Название маршрута “Топовый в своём роде
+                            маршрут”</div>
 
                         <div class="category__item-text">
 
@@ -465,7 +466,8 @@
                             </div>
                             <div class="category__item-text-line">
                                 <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
-                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)
+                                </p>
                             </div>
 
                         </div>
@@ -482,17 +484,17 @@
 
                 </div>
 
-                <div class="category__item category__item--kvadro-3">
+                <div class="category__item category__item--3">
 
                     <div class="category__item-top">
                         <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
                             alt="">
-                        <div class="category__item-top-title">Квадроциклы</div>
+                        <div class="category__item-top-title">Снегоходы</div>
                     </div>
 
                     <div class="container category__item-box">
-                        <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”
-                        </div>
+                        <div class="category__item-title">Название маршрута “Топовый в своём роде
+                            маршрут”</div>
 
                         <div class="category__item-text">
 
@@ -506,7 +508,8 @@
                             </div>
                             <div class="category__item-text-line">
                                 <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
-                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)
+                                </p>
                             </div>
 
                         </div>
@@ -523,17 +526,17 @@
 
                 </div>
 
-                <div class="category__item category__item--kvadro-4">
+                <div class="category__item category__item--4">
 
                     <div class="category__item-top">
                         <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
                             alt="">
-                        <div class="category__item-top-title">Квадроциклы</div>
+                        <div class="category__item-top-title">Снегоходы</div>
                     </div>
 
                     <div class="container category__item-box">
-                        <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”
-                        </div>
+                        <div class="category__item-title">Название маршрута “Топовый в своём роде
+                            маршрут”</div>
 
                         <div class="category__item-text">
 
@@ -547,7 +550,8 @@
                             </div>
                             <div class="category__item-text-line">
                                 <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
-                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)
+                                </p>
                             </div>
 
                         </div>
@@ -564,17 +568,17 @@
 
                 </div>
 
-                <div class="category__item category__item--kvadro-5">
+                <div class="category__item category__item--5">
 
                     <div class="category__item-top">
                         <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
                             alt="">
-                        <div class="category__item-top-title">Квадроциклы</div>
+                        <div class="category__item-top-title">Снегоходы</div>
                     </div>
 
                     <div class="container category__item-box">
-                        <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”
-                        </div>
+                        <div class="category__item-title">Название маршрута “Топовый в своём роде
+                            маршрут”</div>
 
                         <div class="category__item-text">
 
@@ -588,7 +592,8 @@
                             </div>
                             <div class="category__item-text-line">
                                 <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
-                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)
+                                </p>
                             </div>
 
                         </div>
@@ -605,17 +610,17 @@
 
                 </div>
 
-                <div class="category__item category__item--kvadro-6">
+                <div class="category__item category__item--6">
 
                     <div class="category__item-top">
                         <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
                             alt="">
-                        <div class="category__item-top-title">Квадроциклы</div>
+                        <div class="category__item-top-title">Снегоходы</div>
                     </div>
 
                     <div class="container category__item-box">
-                        <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”
-                        </div>
+                        <div class="category__item-title">Название маршрута “Топовый в своём роде
+                            маршрут”</div>
 
                         <div class="category__item-text">
 
@@ -629,7 +634,8 @@
                             </div>
                             <div class="category__item-text-line">
                                 <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
-                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)
+                                </p>
                             </div>
 
                         </div>
@@ -646,12 +652,12 @@
 
                 </div>
 
-                <div class="category__item category__item--kvadro-7">
+                <div class="category__item category__item--7">
 
                     <div class="category__item-top">
                         <img class="category__item-top-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}"
                             alt="">
-                        <div class="category__item-top-title">Квадроциклы</div>
+                        <div class="category__item-top-title">Снегоходы</div>
                     </div>
 
                     <div class="container category__item-box">
@@ -697,7 +703,8 @@
                                     <img src="{% static static_prefix|add:'../img/gitft-img.png' %}" alt="">
                                 </div>
                                 <div class="gift__info-text">
-                                    Поздравляем, вам подарили подарочный набор “Сюрприз”. Виктор поздравляет
+                                    Поздравляем, вам подарили подарочный набор “Сюрприз”. Виктор
+                                    поздравляет
                                     вас: “Дорогой друг,
                                     поздравляю
                                     тебя с днём твоего рождения!”
@@ -705,10 +712,11 @@
                             </div>
                             <div class="gift__electron">
                                 <div class="container">
-                                    <div class="gift-title gift__electron-title">Электронный сертификат в
+                                    <div class="gift-title gift__electron-title">Электронный сертификат
+                                        в
                                         мессенджер</div>
-                                    <p class="gift-text gift__electron-text">Электронный сертификат может
-                                        быть
+                                    <p class="gift-text gift__electron-text">Электронный сертификат
+                                        может быть
                                         отправлен в соц. сети
                                         либо на
                                         E-mail
@@ -722,7 +730,8 @@
                                     src="{% static static_prefix|add:'../img/print-card-img.jpg' %}" alt="">
                                 <!-- <div class="container"> -->
                                 <div class="gift__print-card-title">Печатная открытка в PDF</div>
-                                <p class="gift__print-card-text">Открытка придёт к вам в виде PDF файла. Вы
+                                <p class="gift__print-card-text">Открытка придёт к вам в виде PDF файла.
+                                    Вы
                                     сможете её
                                     распечатать
                                     и подарить</p>
