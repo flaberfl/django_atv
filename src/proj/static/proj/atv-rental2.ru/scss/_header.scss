@@ -14,7 +14,8 @@
         font-size: 25px;
         font-weight: 800;
         line-height: 34px;
-        letter-spacing: -0.3px;
+        // letter-spacing: -0.3px;
+        letter-spacing: -0.6px;
         margin-bottom: 25px;
     }
 
@@ -35,4 +36,10 @@
     &__img {
         display: none;
     }
+
+    &__button-service {
+        padding-right: 41px;
+        padding-left: 41px;
+    }
+
 }

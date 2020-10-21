@@ -1,43 +1,109 @@
-<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+{% load static %}
+{% load rupluralize %}
+
 <section class="category" id="route">
-    <div class="container">
-        <h2 class="title title--align_center title--pb category__title">{{ service_type.n_service_program|default:"9" }} {{ service_type.n_service_program|rupluralize:"маршрут,маршрута,маршрутов" }} для катаний</h2>
-        <div class="category__items">
-            {% for service_program in '12345' %}
-            <div class="category__item category__item--kvadro">
-                <div class="category__item-title"> Услуга {{ service_program }}</div>
-                <div class="category__item-text">
-                    <div class="category__item-text-line">
-                        <div>
-                            <span class="category__item-icon iconify" data-icon="mdi:timer-outline" style="color: #fff;"
-                                data-width="24" data-height="24"></span>
-                        </div> 
-                        <div>Время маршрута: 60 мин.</div>
+
+    <div class="category__sidebar sidebar">
+        <div class="sidebar__content">
+            <div class="sidebar__tabs">
+                <div class="sidebar__tab active" data-id="1"><a href="#category">О маршруте</a></div>
+                <div class="sidebar__tab" data-id="2"><a href="#category">Наш адрес</a></div>
+                <div class="sidebar__tab" data-id="3"><a href="#category">Выберите квадроцикл</a></div>
+                <div class="sidebar__tab" data-id="4"><a href="#category">Программа маршрута</a></div>
+                <div class="sidebar__tab" data-id="5"><a href="#category">Фотографии катаний</a></div>
+                <div class="sidebar__tab" data-id="6"><a href="#category">Что ещё важно знать?</a></div>
+                <div class="sidebar__tab" data-id="6"><a href="#category">Ответы на вопросы</a></div>
+                <div class="sidebar__tab" data-id="6"><a href="#category">Смотреть другие виды катаний/a></div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="category__content">
+
+        <div class="wrapper">
+
+            <div class="category__title category__title-route">О маршруте</div>
+
+            <div class="category__presents">
+
+                <div class="category__presents-item">
+                    <img class="category__presents-item-img" src="{% static static_prefix|add:'../img/rout__img.png' %}"
+                        alt="">
+                    <p class="category__presents-item-text">Более <b>15 видов</b> маршрутов</p>
+                </div>
+
+                <div class="category__presents-item">
+                    <img class="category__presents-item-img"
+                        src="{% static static_prefix|add:'../img/price__img.png' %}" alt="">
+                    <p class="category__presents-item-text">Цены от <br> <b>2 500 рублей</b></p>
+                </div>
+
+                <div class=" category__presents-item">
+                    <img class="category__presents-item-img"
+                        src="{% static static_prefix|add:'../img/plans__img.png' %}" alt="">
+                    <p class="category__presents-item-text">Более <b>25 видов</b> снегоходов</p>
+                </div>
+
+            </div> <!-- /category__presents -->
+
+            <div class="category__route">
+
+                <div class="category__route-about">
+                    <img class="category__route-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
+                    <div class="category__route-description">
+                        <p class="category__route-about-title">Катание происходит в горах</p>
+                        <p class="category__route-about-text">In laboris cupidatat irure minim velit do ipsum anim aute
+                            do Lorem labore. Elit anim officia id ut sunt magna ut commodo elit laboris. Ad veniam
+                            fugiat amet quis officia aliqua ex ipsum non occaecat qui pariatur. Consectetur ex
+                            incididunt consectetur deserunt in enim enim consequat enim sint. Est aute consectetur non
+                            ut veniam laborum exercitation. Aute consectetur qui magna aliquip amet exercitation.
+                            Excepteur irure mollit excepteur cillum do sit officia consequat officia culpa sunt. Do
+                            nostrud eu quis
+                            officia consequat officia culpa sunt. Do nostrud eu quis </p>
                     </div>
-                    <div class="category__item-text-line">
-                        <div>
-                            <span class="category__item-icon iconify" data-icon="bx:bx-map-pin" style="color: #fff;"
-                                data-width="24" data-height="24"></span>
-                        </div>
-                        <div>Длина маршрута: 7 км</div>
+                </div>
+                <div class="category__route-map">
+                    <img src="{% static static_prefix|add:'../img/map-mobile.jpg' %}" width="320" height="351" alt="">
+                    <p class="category__route-map-text">
+                        Город Москва, улица Центральная, дом 10
+                        (метро Проспект Кирова)
+                    </p>
+                </div>
+
+                <div class="category__route-date">
+                    <div class="category__route-date-title">Выберите желаемую дату и время катания</div>
+                    <div class="category__route-date-btn">
+                        <a href="" class="button data-btn">Выбери время</a>
+                        <a href="" class="button data-btn">Выбери дату</a>
                     </div>
-                    <div class="category__item-text-line">
-                        <div>
-                            <span class="category__item-icon iconify" data-icon="bi:people-circle" style="color: #fff;"
-                                data-width="24" data-height="24"></span>
+                </div>
+
+            </div>
+
+            <div class="route__select">
+                <div class="route__select-title">Выберите подходящий квадроцикл</div>
+
+                <div class="route__select-card">
+
+                    <div class="select-card-tabs">
+                        <div class="select-card-tab">Квадроцикл Yamakasi RT 3000</div>
+                        <div class="select-card-tab">Квадроцикл Yamakasi RT 5000</div>
+                        <div class="select-card-tab">Квадроцикл Yamakasi RT 7000</div>
+                    </div>
+                    <div class="select-card-content">
+                        <div class="select-card-content-item">
+                            <img class="select-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt=">
+                            
                         </div>
-                        <div>Участников: до 5 человек</div>
                     </div>
 
                 </div>
-                <div class="category__item-price">
-                    от 2000 руб
-                </div>
-                <a href="{% url 'service_detail' %}"
-                    class="button category__button">Посмотреть маршрут</a>
+
             </div>
-            {% endfor %}
-            
+
+
         </div>
     </div>
 </section>

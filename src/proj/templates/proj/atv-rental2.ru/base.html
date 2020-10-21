@@ -20,6 +20,9 @@
   {% block content %}
   {% endblock %}
 
+  {% include './block/seo.html' %}
+  {% include './block/footer.html' %}
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="{% static static_prefix|add:'../js/main.js' %}"></script>

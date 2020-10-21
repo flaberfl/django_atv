@@ -6,6 +6,12 @@
         letter-spacing: -0.2px;
         text-align: center;
         margin-bottom: 30px;
+
+        &-route {
+            padding-left: 20px;
+            text-align: left;
+        }
+
     }
 
     &__presents {
@@ -140,5 +146,12 @@
 
     &__menu {
         display: none;
+    }
+
+    &__route {
+
+        &-img {
+            width: 100%;
+        }
     }
 }

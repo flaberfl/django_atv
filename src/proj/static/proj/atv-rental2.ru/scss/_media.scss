@@ -66,7 +66,7 @@
         &__title {
             font-size: 32px;
             font-weight: 800;
-            letter-spacing: -0.3px;
+            letter-spacing: -0.6px;
             line-height: 42px;
             width: 610px;
             margin-bottom: 50px;
@@ -141,6 +141,11 @@
 
         &__item {
             line-height: 28px;
+
+            &:nth-child(4) {
+
+                display: block;
+            }
         }
 
         &__bottom {
@@ -213,6 +218,13 @@
 
         &__button {
             margin-bottom: 165px;
+
+            &-service {
+                margin-top: 22px;
+                margin-bottom: 122px;
+                padding-right: 58px;
+                padding-left: 54px;
+            }
         }
     }
 
@@ -261,6 +273,8 @@
         &__items {
             display: flex;
             flex-direction: column;
+            display: none;
+
         }
 
         &__item {
@@ -303,7 +317,6 @@
                 order: 6;
             }
         }
-
     }
 
     .instruction {
@@ -427,5 +440,9 @@
         &__info {
             margin: 0 40px 0 0;
         }
+    }
+
+    .active-tab {
+        display: flex;
     }
 }

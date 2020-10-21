@@ -6,6 +6,10 @@
         letter-spacing: -0.06em;
         position: relative;
 
+        &:nth-child(4) {
+            display: none;
+        }
+
         &::before {
             display: block;
             position: absolute;

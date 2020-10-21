@@ -1,65 +1,60 @@
 {% load static %}
+{% load rupluralize %}
 <header class="header">
     <div class="header__top">
         <div class="container">
             <div class="header__top-inner">
                 <div class="logo header__logo">
                     <a class="logo__link" href="/">
-                        <img class="logo__img" src="{% static static_prefix|add:'../img/logo.jpeg' %}" alt="PROKATANIE">
+                        <img class="logo__img" src="{% static static_prefix|add:'../img/logo.png' %}" alt="logo">
                     </a>
+                    <div class="descr header__descr">сервис - дескриптор</div>
+                </div>
+                <div class="info header__info">
+                    <a class="phone header__phone" href="tel:74956458787">+7(495) 645-87-87</a>
+                    <p class="phone-subtitle header__phone-subtitle">Есть вопросы? Звоните!</p>
                 </div>
                 <nav class="menu">
-                    <ul class="menu__list">
-                        {% comment %} <li class="menu__list-item">
-                            <a class="menu__link" href="#">Москва</a>
-                        </li> {% endcomment %}
-                        <li class="menu__list-item menu__route">
-                            <a class="menu__link" href="#route">Маршруты</a>
-                        </li>
-                        <li class="menu__list-item menu__gift">
-                            <a class="menu__link" href="#gift">Подарочные сертификаты</a>
-                        </li>
-                        <li class="menu__list-item menu__phone--right">
-                            <a class="menu__link phone header__phone"
-                                href="{{ current_site_settings.phone_url }}">{{ current_site_settings.phone_formatted }}</a>
-                        </li>
-                    </ul>
+                    <div class="menu__hamburger">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="#category">О маршруте</a></li>
+                            <li><a class="menu__item" href="#category">Наш адрес</a></li>
+                            <li><a class="menu__item" href="#category">Выберите квадроцикл</a></li>
+                            <li><a class="menu__item" href="#category">Программа маршрута</a></li>
+                            <li><a class="menu__item" href="#category">Фотографии катаний</a></li>
+                            <li><a class="menu__item" href="#category">Что ещё важно знать?</a></li>
+                            <li><a class="menu__item" href="#category">Ответы на вопросы</a> </li>
+                            <li><a class="menu__item" href="#category">Смотреть другие виды катаний</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
     </div>
     <div class="header__content">
-        <div class="header-decor header-decor--bg">
-            <div class="header-image">
-                <img class="header__img" src="{{ service_type.page_data.image_file.big }}"
-                    alt="Катание на квадроциклах">
+        <div class="container">
+            <h1 class="header__title">Название маршрута “Топовый в своём роде маршрут”</h1>
+            <div class="header__advantages">
+                <div class="advantages__item">Время маршрута: 1 час</div>
+                <div class="advantages__item">Цены от 3 500 рублей</div>
+                <div class="advantages__item">Длина маршрута: 20 км</div>
+                <div class="advantages__item">Прокат квадроциклов Щедрино</div>
+
             </div>
-        </div>
-        <div class="header__text">
-            <div class="container">
-
-                <h1 class="main-title header__title">
-                    {% if service_type.page_data.h1 %}
-                        {{ service_type.page_data.h1|safe }}
-                    {% else %}
-                        {% if service_type.page_data.title %}
-                            {{ service_type.page_data.title }}
-                        {% else %}
-                            {{ current_site_settings.site_title }} #в Москве#
-                        {% endif %}
-                    {% endif %}
-                </h1>
-
-                <p class="header__description">
-                    {{ service_type.n_service_program }}  {{ service_type.n_service_program|rupluralize:"вариант,варианта,вариантов" }} маршрутов для катаний ждут вас
-                </p>
-                
+            <div class="header__button-wrap">
+                <a class="button header__button header__button-service href=" service_list">Подробнее о маршруте</a>
             </div>
-        </div>
-
-        <div class="header__button header__button--mb">
-            <div class="container">
-                <a href="#route" class="button">Посмотреть маршруты</a>
+            <div class="header__img">
+                <img src="{% static static_prefix|add:'../img/kvadro.png' %}" alt="">
+            </div>
+            <div class="advantages__bottom">
+                <p class="advantages__bottom-item">Работаем более <b>5 лет</b></p>
+                <p class="advantages__bottom-item"><b>Безопасное</b> онлайн бронирование</p>
+                <p class="advantages__bottom-item">Работаем более <b>5 лет</b></p>
             </div>
         </div>
     </div>
