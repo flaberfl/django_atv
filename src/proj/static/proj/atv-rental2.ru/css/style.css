@@ -673,7 +673,7 @@ body {
   margin-top: 81px;
 }
 
-.sidebar__link {
+.sidebar__tab {
   display: block;
   font-size: 18px;
   font-weight: 700;
@@ -681,7 +681,7 @@ body {
   padding: 28px 112px 28px 123px;
 }
 
-.sidebar__link:hover {
+.sidebar__tab:hover {
   background: #EDF1F7;
   color: black;
   -webkit-transition: all 0.5s;
@@ -689,7 +689,7 @@ body {
   transition: all 0.5s;
 }
 
-.sidebar__link-active {
+.sidebar__tab-active {
   background: #EDF1F7;
 }
 
