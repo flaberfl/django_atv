@@ -211,6 +211,22 @@ body {
     left: 0;
 }
 
+.mobile__tabs {
+
+    position: relative;
+
+    &-items {
+        display: flex;
+        // position: absolute;
+    }
+
+    &-item {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+
 .sidebar {
 
     display: none;

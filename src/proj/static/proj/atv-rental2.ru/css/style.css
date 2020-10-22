@@ -670,6 +670,22 @@ body {
   left: 0;
 }
 
+.mobile__tabs {
+  position: relative;
+}
+
+.mobile__tabs-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mobile__tabs-item {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .sidebar {
   display: none;
   margin-top: 81px;
