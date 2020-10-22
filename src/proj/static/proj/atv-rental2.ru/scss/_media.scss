@@ -13,7 +13,7 @@
     .header {
 
         &__button-wrap {
-            margin-top: 32px;
+            margin-top: 88px;
         }
 
 
@@ -56,11 +56,8 @@
         }
 
         &__content {
-            // display: flex;
-            // justify-content: space-between;
             margin-top: 10px;
-            // padding-left: 157px;
-            padding-top: 41px;
+            padding-top: 0;
         }
 
         &__title {
@@ -68,7 +65,8 @@
             font-weight: 800;
             letter-spacing: -0.6px;
             line-height: 42px;
-            width: 610px;
+            text-align: left;
+            max-width: 460px;
             margin-bottom: 50px;
         }
 
@@ -94,6 +92,15 @@
                 box-sizing: border-box;
                 border-radius: 40px;
             }
+        }
+
+        &__img {
+            display: block;
+            position: absolute;
+            top: 130px;
+            right: 0;
+            width: 50%;
+
         }
     }
 
@@ -151,13 +158,24 @@
         &__bottom {
             display: flex;
             justify-content: space-between;
-            max-width: 676px;
+            width: 100%;
             padding-left: 8px;
             letter-spacing: -0.9px;
+            margin-top: 60px;
+            margin-bottom: 30px;
 
             &-item {
                 margin-right: 10px;
             }
+        }
+    }
+}
+
+@media (min-width: 880px) {
+
+    .header {
+        &__title {
+            max-width: 500px;
         }
     }
 }
@@ -183,6 +201,10 @@
             position: relative;
         }
 
+        &__title {
+            max-width: 500px;
+        }
+
         &__img {
             display: block;
             position: absolute;
@@ -194,9 +216,17 @@
             text-align: left;
         }
     }
+
+    .advantages {
+
+        &__bottom {
+            max-width: 676px;
+        }
+    }
+
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
 
     body {
         max-width: 1366px;
@@ -204,7 +234,7 @@
 
     .header {
         &__title {
-            text-align: left;
+            max-width: 610px;
         }
 
         &-wrapper {
@@ -213,11 +243,20 @@
         }
 
         &__content {
+            margin-top: 45px;
             padding-left: 157px;
         }
 
+        // &__img {
+        //     width: 100%;
+        // }
+
         &__button {
             margin-bottom: 165px;
+
+            &-wrap {
+                margin-top: 47px;
+            }
 
             &-service {
                 margin-top: 22px;
@@ -232,6 +271,7 @@
 
         &__bottom {
             margin-bottom: 44px;
+            margin-top: 33px;
         }
     }
 

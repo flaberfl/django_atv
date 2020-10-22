@@ -483,7 +483,6 @@ body {
 }
 
 .wrapper {
-  max-width: 903px;
   margin-left: auto;
 }
 
@@ -1160,7 +1159,7 @@ body {
 
 @media (min-width: 576px) {
   .header__button-wrap {
-    margin-top: 32px;
+    margin-top: 88px;
   }
 }
 
@@ -1201,14 +1200,15 @@ body {
   }
   .header__content {
     margin-top: 10px;
-    padding-top: 41px;
+    padding-top: 0;
   }
   .header__title {
     font-size: 32px;
     font-weight: 800;
     letter-spacing: -0.6px;
     line-height: 42px;
-    width: 610px;
+    text-align: left;
+    max-width: 460px;
     margin-bottom: 50px;
   }
   .header__advantages {
@@ -1231,6 +1231,13 @@ body {
             box-sizing: border-box;
     -webkit-border-radius: 40px;
             border-radius: 40px;
+  }
+  .header__img {
+    display: block;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    width: 50%;
   }
   .category {
     padding-top: 148px;
@@ -1285,12 +1292,20 @@ body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    max-width: 676px;
+    width: 100%;
     padding-left: 8px;
     letter-spacing: -0.9px;
+    margin-top: 60px;
+    margin-bottom: 30px;
   }
   .advantages__bottom-item {
     margin-right: 10px;
+  }
+}
+
+@media (min-width: 880px) {
+  .header__title {
+    max-width: 500px;
   }
 }
 
@@ -1309,6 +1324,9 @@ body {
   .header__content {
     position: relative;
   }
+  .header__title {
+    max-width: 500px;
+  }
   .header__img {
     display: block;
     position: absolute;
@@ -1318,14 +1336,17 @@ body {
   .header__button-wrap {
     text-align: left;
   }
+  .advantages__bottom {
+    max-width: 676px;
+  }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   body {
     max-width: 1366px;
   }
   .header__title {
-    text-align: left;
+    max-width: 610px;
   }
   .header-wrapper {
     display: -webkit-box;
@@ -1338,10 +1359,14 @@ body {
             justify-content: space-between;
   }
   .header__content {
+    margin-top: 45px;
     padding-left: 157px;
   }
   .header__button {
     margin-bottom: 165px;
+  }
+  .header__button-wrap {
+    margin-top: 47px;
   }
   .header__button-service {
     margin-top: 22px;
@@ -1351,6 +1376,7 @@ body {
   }
   .advantages__bottom {
     margin-bottom: 44px;
+    margin-top: 33px;
   }
   .category {
     display: -webkit-box;
