@@ -1472,6 +1472,7 @@ body {
         -ms-flex-order: 4;
             order: 4;
     padding-top: 24px;
+    padding-bottom: 78px;
   }
   .gift__title {
     font-size: 32px;
