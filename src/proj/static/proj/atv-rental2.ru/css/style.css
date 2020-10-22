@@ -562,6 +562,11 @@ body {
           border-radius: 36px;
 }
 
+.menu__hamburger {
+  position: fixed;
+  z-index: 999;
+}
+
 .menu__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -579,7 +584,6 @@ body {
   width: 54px;
   height: 26px;
   cursor: pointer;
-  z-index: 999;
 }
 
 .menu__btn > span,
@@ -614,7 +618,6 @@ body {
   margin: 0;
   padding: 0 0;
   list-style: none;
-  text-align: center;
   background-color: #ECEFF1;
   -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);

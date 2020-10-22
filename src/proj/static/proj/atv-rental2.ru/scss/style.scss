@@ -109,9 +109,16 @@ body {
     border-radius: 36px;
 }
 
+
+
 /// Бургер меню ///
 
 .menu {
+
+    &__hamburger {
+        position: fixed;
+        z-index: 999;
+    }
 
     &__btn {
         display: flex;
@@ -120,11 +127,10 @@ body {
         /* центрируем содержимое кнопки */
         position: fixed;
         top: 40px;
-        right: 33px; //63px
+        right: 33px;
         width: 54px;
         height: 26px;
         cursor: pointer;
-        z-index: 999;
 
         &>span,
         &>span::before,
@@ -154,12 +160,10 @@ body {
         visibility: hidden;
         top: 0;
         left: -100%;
-        // width: 300px;
-        // height: 100%;
         margin: 0;
         padding: 0 0;
         list-style: none;
-        text-align: center;
+        // text-align: center;
         background-color: #ECEFF1;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
         transition-duration: .25s;
@@ -182,7 +186,7 @@ body {
     }
 }
 
-// Начало бургера  //////////////////
+/////    Начало бургера  //////////////////
 
 #menu__toggle {
     opacity: 0;
@@ -235,7 +239,7 @@ body {
     }
 }
 
-// Конец бургера //////////////////////
+
 
 @import "header";
 @import "advantages";
