@@ -211,20 +211,20 @@ body {
     left: 0;
 }
 
-.mobile__tabs {
+// .mobile__tabs {
 
-    position: relative;
+//     position: relative;
 
-    &-items {
-        display: flex;
-        // position: absolute;
-    }
+//     &-items {
+//         display: flex;
+//         // position: absolute;
+//     }
 
-    &-item {
-        font-size: 18px;
-        font-weight: 700;
-    }
-}
+//     &-item {
+//         font-size: 18px;
+//         font-weight: 700;
+//     }
+// }
 
 
 .sidebar {
@@ -253,6 +253,31 @@ body {
         }
     }
 }
+
+.mobile__tabs {
+    display: flex;
+
+}
+
+.mobile__tab {
+
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3B3A48;
+    opacity: 0.5;
+    background: #C4C4C4;
+    padding: 15px 38px;
+
+    &.active {
+        color: #3B3A48;
+        opacity: 1;
+        background: #EDF1F7;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+
+}
+
 
 
 

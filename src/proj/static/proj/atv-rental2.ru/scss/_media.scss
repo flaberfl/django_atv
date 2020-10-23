@@ -13,12 +13,16 @@
     .header {
 
         &__button-wrap {
-            margin-top: 88px;
+            margin-top: 40px;
         }
 
         &__advantages {
             margin-left: 160px;
         }
+    }
+
+    .advantages__bottom {
+        text-align: center;
     }
 
 }
@@ -96,6 +100,10 @@
                 border: 1px solid #00B6F8;
                 box-sizing: border-box;
                 border-radius: 40px;
+            }
+
+            &-wrap {
+                margin-top: 88px;
             }
         }
 
