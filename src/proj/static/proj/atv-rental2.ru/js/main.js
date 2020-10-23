@@ -9,6 +9,30 @@ $(function () {
         return false;
     });
 
-    $(".owl-carousel").owlCarousel();
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        // center: true,
+        // startPosition: 0,
+        smartSpeed: 1000,
+        autoWidth: true,
+        items: 1,
+        // touchDrag: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false
+            },
+            600: {
+                items: 3,
+                nav: false
+            },
+            1000: {
+                items: 5,
+                nav: true,
+                loop: false
+            }
+        }
+    })
 
 });

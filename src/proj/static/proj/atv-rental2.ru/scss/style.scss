@@ -254,20 +254,26 @@ body {
     }
 }
 
+.owl-carousel {
+    width: 100%;
+}
+
 .mobile__tabs {
     display: flex;
-
+    justify-content: space-between;
+    padding-bottom: 40px;
 }
 
 .mobile__tab {
 
-    display: inline-block;
+    // width: 100%;
     font-size: 18px;
     font-weight: 700;
     color: #3B3A48;
     opacity: 0.5;
     background: #C4C4C4;
     padding: 15px 38px;
+    // border: 1px solid red;
 
     &.active {
         color: #3B3A48;

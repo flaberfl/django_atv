@@ -695,15 +695,23 @@ body {
   background: #EDF1F7;
 }
 
+.owl-carousel {
+  width: 100%;
+}
+
 .mobile__tabs {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 40px;
 }
 
 .mobile__tab {
-  display: inline-block;
   font-size: 18px;
   font-weight: 700;
   color: #3B3A48;

@@ -1229,7 +1229,7 @@ body {
   .header__content {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "h_slider h_text" "h_slider h_botton";
+        grid-template-areas: "h_slider h_text" "h_slider h_botton";
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
     -ms-grid-rows: 1fr 1fr;
@@ -1369,7 +1369,7 @@ body {
   .footer__content {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "service-info contacts" "documents contacts";
+        grid-template-areas: "service-info contacts" "documents contacts";
     -ms-grid-columns: 40% 300px;
         grid-template-columns: 40% 300px;
     -ms-grid-rows: 1fr auto;
