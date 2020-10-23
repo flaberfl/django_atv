@@ -9,6 +9,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   {% block title %}
   {% endblock %}
+
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="{% static static_prefix|add:'../css/libs/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static static_prefix|add:'../css/libs/owl.theme.default.min.css' %}">
   <link rel="stylesheet" href="{% static static_prefix|add:'../css/style.min.css' %}">
 
   {% include './subtemplates/favicon_template.html' %}
@@ -25,6 +30,9 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="{% static static_prefix|add:'../js/libs/owl.carousel.min.js' %}"></script>
+
+
   <script src="{% static static_prefix|add:'../js/main.js' %}"></script>
 
 
