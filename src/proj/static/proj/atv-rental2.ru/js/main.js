@@ -8,4 +8,7 @@ $(function () {
         $('#' + id).addClass('active-tab').fadeIn();
         return false;
     });
+
+    $(".owl-carousel").owlCarousel();
+
 });
