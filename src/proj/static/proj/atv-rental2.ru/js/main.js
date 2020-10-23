@@ -9,30 +9,38 @@ $(function () {
         return false;
     });
 
+    $('.menu__hamburger .menu__item').on('click', function (event) {
+        var id = $(this).attr('data-id');
+        $('.category__content').find('.category__items').removeClass('active-tab').hide();
+        $('menu__hamburger .menu__box').find('.menu__item').removeClass('active');
+        $(this).addClass('active');
+        $('#' + id).addClass('active-tab').fadeIn();
+        return false;
+    });
+
     $('.owl-carousel').owlCarousel({
         loop: true,
         // center: true,
-        // startPosition: 0,
         smartSpeed: 1000,
         autoWidth: true,
-        items: 1,
-        // touchDrag: true,
-        responsiveClass: true,
+        wrapAround: true,
+        dots: false,
+        touchDrag: true,
+
+
         responsive: {
             0: {
-                items: 1,
-                nav: false
+                items: 1
             },
             600: {
-                items: 3,
-                nav: false
+                items: 3
             },
             1000: {
-                items: 5,
-                nav: true,
-                loop: false
+                items: 5
             }
         }
+
     })
+
 
 });
