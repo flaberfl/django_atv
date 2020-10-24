@@ -31,7 +31,7 @@ body {
 
 .wrapper {
     // Контейнер для правой половины
-    // max-width: 903px;
+    max-width: 903px;
     // padding-right: 99px; c 992 включен
     margin-left: auto; // Это спасло меня ))
 }
@@ -211,22 +211,6 @@ body {
     left: 0;
 }
 
-// .mobile__tabs {
-
-//     position: relative;
-
-//     &-items {
-//         display: flex;
-//         // position: absolute;
-//     }
-
-//     &-item {
-//         font-size: 18px;
-//         font-weight: 700;
-//     }
-// }
-
-
 .sidebar {
 
     display: none;
@@ -256,7 +240,6 @@ body {
 
 .owl-carousel .owl-item {
     min-height: 70px;
-    // width: 100%;
 }
 
 .mobile__tabs {
@@ -280,7 +263,6 @@ body {
         opacity: 1;
         background: #EDF1F7;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-        // border: 1px solid red;
     }
 
 }

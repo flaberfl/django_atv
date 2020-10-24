@@ -483,6 +483,7 @@ body {
 }
 
 .wrapper {
+  max-width: 903px;
   margin-left: auto;
 }
 
