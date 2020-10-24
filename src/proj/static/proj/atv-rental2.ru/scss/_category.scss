@@ -37,6 +37,11 @@
         }
     }
 
+    &__items {
+        display: none;
+
+    }
+
     &__item {
 
         &-top {
@@ -155,4 +160,9 @@
             width: 100%;
         }
     }
+}
+
+.active-tab {
+    display: flex;
+    flex-direction: column;
 }
