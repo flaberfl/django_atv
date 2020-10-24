@@ -1393,6 +1393,7 @@ body {
   }
   .sidebar {
     display: block;
+    margin-top: 32px;
   }
   .sidebar__content {
     position: -webkit-sticky;
@@ -1443,7 +1444,7 @@ body {
             justify-content: space-between;
   }
   .category__content {
-    margin-top: 110px;
+    margin-top: 60px;
   }
   .category__title {
     text-align: left;
@@ -1462,6 +1463,78 @@ body {
     max-width: 750px;
     padding-left: 0;
     margin-bottom: 68px;
+  }
+  .category__item-box {
+    margin-bottom: 0;
+  }
+  .instruction {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .instruction__items {
+    padding-top: 41px;
+  }
+  .instruction__item-img {
+    width: 200px;
+    height: 200px;
+  }
+  .instruction__item-text {
+    width: 190px;
+  }
+  .gift {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4;
+    padding-top: 24px;
+    padding-bottom: 78px;
+  }
+  .gift__title {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+    padding-left: 0;
+    margin-bottom: 55px;
+  }
+  .gift__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .gift__info {
+    padding-left: 48px;
+    padding-right: 48px;
+    width: 400px;
+  }
+  .gift-title, .gift-text {
+    padding-left: 26px;
+  }
+  .gift__electron {
+    padding-bottom: 74px;
+  }
+  .gift__electron-text {
+    width: 270px;
+  }
+  .gift__column-right {
+    margin-right: 51px;
+  }
+  .gift__print-card.container {
+    padding: 0;
+  }
+  .gift__print-card-title, .gift__print-card-text {
+    padding-left: 0;
+    width: 250px;
+  }
+  .gift__print-card-img {
+    width: 301px;
+    height: 211px;
   }
 }
 
@@ -1511,7 +1584,8 @@ body {
     margin-top: 33px;
   }
   .sidebar__content {
-    margin-right: 0;
+    margin-right: 40px;
+    margin-top: 48px;
   }
   .sidebar__tab {
     padding: 28px 112px 28px 123px;
@@ -1598,75 +1672,6 @@ body {
     -webkit-order: 6;
         -ms-flex-order: 6;
             order: 6;
-  }
-  .instruction {
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .instruction__items {
-    padding-top: 41px;
-  }
-  .instruction__item-img {
-    width: 200px;
-    height: 200px;
-  }
-  .instruction__item-text {
-    width: 190px;
-  }
-  .gift {
-    -webkit-box-ordinal-group: 5;
-    -webkit-order: 4;
-        -ms-flex-order: 4;
-            order: 4;
-    padding-top: 24px;
-    padding-bottom: 78px;
-  }
-  .gift__title {
-    font-size: 32px;
-    font-weight: 800;
-    letter-spacing: -0.4px;
-    padding-left: 0;
-    margin-bottom: 55px;
-  }
-  .gift__content {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .gift__info {
-    padding-left: 48px;
-    padding-right: 48px;
-    width: 400px;
-  }
-  .gift-title, .gift-text {
-    padding-left: 26px;
-  }
-  .gift__electron {
-    padding-bottom: 74px;
-  }
-  .gift__electron-text {
-    width: 270px;
-  }
-  .gift__column-right {
-    margin-right: 51px;
-  }
-  .gift__print-card.container {
-    padding: 0;
-  }
-  .gift__print-card-title, .gift__print-card-text {
-    padding-left: 0;
-    width: 250px;
-  }
-  .gift__print-card-img {
-    width: 301px;
-    height: 211px;
   }
   .seo {
     padding-top: 4px;

@@ -258,6 +258,7 @@
 
     .sidebar {
         display: block;
+        margin-top: 32px;
 
         &__content {
             position: sticky;
@@ -320,7 +321,7 @@
         justify-content: space-between;
 
         &__content {
-            margin-top: 110px;
+            margin-top: 60px;
         }
 
         &__title {
@@ -337,6 +338,97 @@
             margin-bottom: 68px;
         }
 
+        &__item {
+            &-box {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    .instruction {
+
+        order: 1;
+
+        &__items {
+            padding-top: 41px;
+        }
+
+        &__item {
+
+            &-img {
+                width: 200px;
+                height: 200px;
+            }
+
+            &-text {
+                width: 190px;
+            }
+        }
+    }
+
+    .gift {
+
+        order: 4;
+        padding-top: 24px;
+        padding-bottom: 78px;
+
+        &__title {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.4px;
+            padding-left: 0;
+            margin-bottom: 55px;
+        }
+
+        &__content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__info {
+            padding-left: 48px;
+            padding-right: 48px;
+            width: 400px;
+        }
+
+        &-title,
+        &-text {
+            padding-left: 26px;
+        }
+
+        &__electron {
+            padding-bottom: 74px;
+
+            &-text {
+                width: 270px;
+            }
+        }
+
+        &__column-right {
+            margin-right: 51px;
+        }
+
+        &__print {
+
+            &-card.container {
+                padding: 0;
+            }
+
+            &-card {
+
+                &-title,
+                &-text {
+                    padding-left: 0;
+                    width: 250px;
+                }
+
+                &-img {
+                    width: 301px;
+                    height: 211px;
+                }
+            }
+        }
     }
 
 }
@@ -402,7 +494,9 @@
 
     .sidebar {
         &__content {
-            margin-right: 0;
+            margin-right: 40px;
+            margin-top: 48px;
+
         }
 
         &__tab {
@@ -501,90 +595,7 @@
         }
     }
 
-    .instruction {
 
-        order: 1;
-
-        &__items {
-            padding-top: 41px;
-        }
-
-        &__item {
-
-            &-img {
-                width: 200px;
-                height: 200px;
-            }
-
-            &-text {
-                width: 190px;
-            }
-        }
-    }
-
-    .gift {
-
-        order: 4;
-        padding-top: 24px;
-        padding-bottom: 78px;
-
-        &__title {
-            font-size: 32px;
-            font-weight: 800;
-            letter-spacing: -0.4px;
-            padding-left: 0;
-            margin-bottom: 55px;
-        }
-
-        &__content {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        &__info {
-            padding-left: 48px;
-            padding-right: 48px;
-            width: 400px;
-        }
-
-        &-title,
-        &-text {
-            padding-left: 26px;
-        }
-
-        &__electron {
-            padding-bottom: 74px;
-
-            &-text {
-                width: 270px;
-            }
-        }
-
-        &__column-right {
-            margin-right: 51px;
-        }
-
-        &__print {
-
-            &-card.container {
-                padding: 0;
-            }
-
-            &-card {
-
-                &-title,
-                &-text {
-                    padding-left: 0;
-                    width: 250px;
-                }
-
-                &-img {
-                    width: 301px;
-                    height: 211px;
-                }
-            }
-        }
-    }
 
     .seo {
         padding-top: 4px;
