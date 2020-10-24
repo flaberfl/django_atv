@@ -96,6 +96,7 @@
         &__info {
             display: block;
             margin-top: 22px;
+            margin-left: 100px;
         }
 
         &__content {
@@ -251,6 +252,9 @@
 }
 
 @media (min-width: 992px) {
+    .wrapper {
+        padding-right: 30px;
+    }
 
     .sidebar {
         display: block;
@@ -258,12 +262,19 @@
         &__content {
             position: sticky;
             top: 0;
+            margin-right: 20px;
+        }
+
+        &__tab {
+            padding: 28px 42px 28px 46px;
         }
     }
 
-    .wrapper {
-        padding-right: 99px;
+    .mobile__slider,
+    .menu {
+        display: none;
     }
+
 
     .header {
 
@@ -282,6 +293,10 @@
             right: 0;
         }
 
+        &__info {
+            margin-left: auto;
+        }
+
         &__button-wrap {
             text-align: left;
         }
@@ -294,12 +309,46 @@
         }
     }
 
+    .slider__tab {
+        padding: 28px 112px 28px 123px;
+    }
+
+    .category {
+
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+
+        &__content {
+            margin-top: 110px;
+        }
+
+        &__title {
+            text-align: left;
+            letter-spacing: -0.3px;
+            margin-bottom: 65px;
+        }
+
+        &__presents {
+            display: flex;
+            justify-content: space-between;
+            max-width: 750px;
+            padding-left: 0;
+            margin-bottom: 68px;
+        }
+
+    }
+
 }
 
 @media (min-width: 1200px) {
 
     body {
         max-width: 1366px;
+    }
+
+    .wrapper {
+        padding-right: 99px;
     }
 
     .header {
@@ -351,11 +400,21 @@
         }
     }
 
+    .sidebar {
+        &__content {
+            margin-right: 0;
+        }
+
+        &__tab {
+            padding: 28px 112px 28px 123px;
+        }
+    }
+
     .category {
 
-        display: flex;
-        padding: 0;
-        justify-content: space-between;
+        // display: flex; // Перенос в 992
+        // padding: 0;
+        // justify-content: space-between;
 
         &__content {
             margin-top: 110px;
@@ -369,11 +428,11 @@
         }
 
         &__presents {
-            display: flex;
-            justify-content: space-between;
-            max-width: 750px;
-            padding-left: 0;
-            margin-bottom: 68px;
+            // display: flex;
+            // justify-content: space-between;
+            // max-width: 750px;
+            // padding-left: 0;
+            // margin-bottom: 68px;
 
             &-item {
 

@@ -9,14 +9,14 @@ $(function () {
         return false;
     });
 
-    // $('.menu__hamburger .menu__item').on('click', function (event) {
-    //     var id = $(this).attr('data-id');
-    //     $('.category__content').find('.category__items').removeClass('active-tab').hide();
-    //     $('menu__hamburger .menu__box').find('.menu__item').removeClass('active');
-    //     $(this).addClass('active');
-    //     $('#' + id).addClass('active-tab').fadeIn();
-    //     return false;
-    // });
+    $('.menu__hamburger .menu__item').on('click', function (event) {
+        var id = $(this).attr('data-id');
+        $('.category__content').find('.category__items').removeClass('active-tab').hide();
+        $('.menu__hamburger .menu__box').find('.menu__item').removeClass('active');
+        $(this).addClass('active');
+        $('#' + id).addClass('active-tab').fadeIn();
+        return false;
+    });
 
     $('.owl-carousel').owlCarousel({
         loop: true,
