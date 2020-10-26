@@ -990,6 +990,7 @@ body {
 
 .category__route-img {
   width: 100%;
+  padding-right: 0;
 }
 
 .active-tab {
@@ -1130,6 +1131,10 @@ body {
   font-weight: 400;
   line-height: 19px;
   padding-left: 15px;
+}
+
+.route {
+  display: none;
 }
 
 .seo {
