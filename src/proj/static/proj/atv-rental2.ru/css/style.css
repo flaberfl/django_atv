@@ -1164,6 +1164,10 @@ body {
   margin-top: 60px;
 }
 
+.category__route-map img {
+  width: 100%;
+}
+
 .category__route-map-text {
   position: absolute;
   content: "";
@@ -1173,9 +1177,15 @@ body {
   opacity: 0.8;
   min-height: 53px;
   text-align: right;
+  bottom: 0;
+  width: 100%;
+}
+
+.category__route-map-text p {
+  display: inline-block;
+  max-width: 310px;
   padding-right: 12px;
   padding-top: 3px;
-  bottom: 0;
 }
 
 .category__route-date {

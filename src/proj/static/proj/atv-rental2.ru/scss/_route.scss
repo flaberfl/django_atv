@@ -42,6 +42,10 @@
     position: relative;
     margin-top: 60px;
 
+    img {
+        width: 100%;
+    }
+
     &-text {
         position: absolute;
         content: "";
@@ -51,9 +55,16 @@
         opacity: 0.8;
         min-height: 53px;
         text-align: right;
-        padding-right: 12px;
-        padding-top: 3px;
         bottom: 0;
+        width: 100%;
+
+        p {
+            display: inline-block;
+            max-width: 310px;
+            padding-right: 12px;
+            padding-top: 3px;
+
+        }
     }
 }
 
