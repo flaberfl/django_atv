@@ -18,7 +18,10 @@ $(function () {
         return false;
     });
 
-    $('.owl-carousel').owlCarousel({
+    const mobileSlider = $('#mobileSlider');
+    const photoSlider = $('#photoSlider')
+
+    mobileSlider.owlCarousel({
         loop: true,
         // center: true,
         smartSpeed: 1000,
@@ -40,7 +43,19 @@ $(function () {
             }
         }
 
-    })
+    });
+
+    photoSlider.owlCarousel({
+        // loop: true,
+        center: true,
+        items: 1,
+        smartSpeed: 1000,
+        // autoWidth: true,
+        // wrapAround: true,
+        dots: true
+
+    });
+
 
 
 });

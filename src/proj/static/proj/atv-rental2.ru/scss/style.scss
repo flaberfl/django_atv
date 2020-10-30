@@ -36,6 +36,8 @@ body {
     margin-left: auto; // Это спасло меня ))
 }
 
+
+
 /// Элементы шапки-футера ///
 
 .descr {
@@ -241,6 +243,36 @@ body {
 .owl-carousel .owl-item {
     min-height: 70px;
 }
+
+.owl-dots {
+    margin-top: 14px;
+    text-align: center;
+
+    & .active {
+        span {
+            background: linear-gradient(223.45deg, #00B6F8 15.38%, #03D4F9 86.59%);
+            box-shadow: 0px 0px 4px #01C4F8;
+        }
+    }
+}
+
+.owl-dot {
+
+    outline: none;
+
+    span {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        border: 1px solid #A3EAFC;
+        border-radius: 50%;
+    }
+}
+
+.owl-dot+.owl-dot {
+    margin-left: 13px;
+}
+
 
 .mobile__slider {
     max-width: 1366px;

@@ -700,6 +700,36 @@ body {
   min-height: 70px;
 }
 
+.owl-dots {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.owl-dots .active span {
+  background: -webkit-linear-gradient(226.55deg, #00B6F8 15.38%, #03D4F9 86.59%);
+  background: -o-linear-gradient(226.55deg, #00B6F8 15.38%, #03D4F9 86.59%);
+  background: linear-gradient(223.45deg, #00B6F8 15.38%, #03D4F9 86.59%);
+  -webkit-box-shadow: 0px 0px 4px #01C4F8;
+          box-shadow: 0px 0px 4px #01C4F8;
+}
+
+.owl-dot {
+  outline: none;
+}
+
+.owl-dot span {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 1px solid #A3EAFC;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.owl-dot + .owl-dot {
+  margin-left: 13px;
+}
+
 .mobile__slider {
   max-width: 1366px;
 }
@@ -1142,6 +1172,39 @@ body {
   padding-left: 20px;
 }
 
+.route__instruction-title {
+  text-align: left;
+  line-height: 34px;
+  padding-left: 10px;
+}
+
+.route-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  padding: 44px 33px 28px;
+  background-color: #EDF1F7;
+  display: inline-block;
+}
+
+.route-text p {
+  margin-bottom: 16px;
+}
+
+.route__photo-title {
+  margin-top: 30px;
+  margin-bottom: 44px;
+}
+
+.route__knowledge {
+  margin-top: 44px;
+}
+
+.route__knowledge-title {
+  text-align: left;
+  padding-left: 10px;
+}
+
 .category__route-about-title {
   margin-left: 20px;
   padding-top: 30px;
@@ -1154,6 +1217,7 @@ body {
 .category__route-about-text {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 20px;
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
@@ -1190,6 +1254,15 @@ body {
 
 .category__route-date {
   display: none;
+}
+
+.temp {
+  min-height: 257px;
+  font-weight: 700;
+  border: 1px solid yellow;
+  background: yellow;
+  text-align: center;
+  padding-top: 80px;
 }
 
 .seo {
