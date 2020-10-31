@@ -192,6 +192,11 @@
             &-wrap {
                 margin-top: 88px;
             }
+
+            &-service {
+                padding-right: 57px;
+                padding-left: 55px;
+            }
         }
 
         &__img {
@@ -200,6 +205,10 @@
             top: 130px;
             right: 0;
             width: 50%;
+
+            &-service {
+                top: 194px;
+            }
 
         }
     }
@@ -233,7 +242,7 @@
 
             &-box {
                 padding-top: 38px;
-                padding-left: 42px;
+                padding-left: 35px;
                 // padding-bottom: 10px;
             }
 
@@ -434,6 +443,12 @@
 
     }
 
+    .route {
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+    }
+
     .instruction {
 
         margin-top: 50px;
@@ -522,7 +537,7 @@
     }
 
     .seo {
-        max-width: 76%;
+        // max-width: 76%;
         margin-left: auto;
 
         &__title {
@@ -695,7 +710,7 @@
 
     .seo {
         padding-top: 4px;
-        max-width: 71%;
+        // max-width: 71%;
 
 
         &__title {

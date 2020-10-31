@@ -42,20 +42,24 @@
         &-title {
             margin-top: 30px;
             margin-bottom: 44px;
+            text-align: left;
+            padding-left: 10px;
         }
     }
 
     &__knowledge {
 
         margin-top: 44px;
-
-        &-title {
-            text-align: left;
-            padding-left: 10px;
-
-        }
     }
 
+    &__faq {
+        margin-top: 56px;
+        margin-bottom: 77px;
+    }
+
+    &__other {
+        padding-top: 54px;
+    }
 
 }
 
@@ -65,7 +69,9 @@
 }
 
 .category__route-about {
+
     background-color: #EDF1F7;
+
 
     &-text {
         padding-left: 20px;

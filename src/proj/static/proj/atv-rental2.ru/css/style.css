@@ -1172,7 +1172,7 @@ body {
   padding-left: 20px;
 }
 
-.route__instruction-title {
+.route-title {
   text-align: left;
   line-height: 34px;
   padding-left: 10px;
@@ -1194,15 +1194,21 @@ body {
 .route__photo-title {
   margin-top: 30px;
   margin-bottom: 44px;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .route__knowledge {
   margin-top: 44px;
 }
 
-.route__knowledge-title {
-  text-align: left;
-  padding-left: 10px;
+.route__faq {
+  margin-top: 56px;
+  margin-bottom: 77px;
+}
+
+.route__other {
+  padding-top: 54px;
 }
 
 .category__route-about-title {
@@ -1493,12 +1499,19 @@ body {
   .header__button-wrap {
     margin-top: 88px;
   }
+  .header__button-service {
+    padding-right: 57px;
+    padding-left: 55px;
+  }
   .header__img {
     display: block;
     position: absolute;
     top: 130px;
     right: 0;
     width: 50%;
+  }
+  .header__img-service {
+    top: 194px;
   }
   .category {
     padding-top: 0;
@@ -1521,7 +1534,7 @@ body {
   }
   .category__item-box {
     padding-top: 38px;
-    padding-left: 42px;
+    padding-left: 35px;
   }
   .category__item-bottom {
     margin-left: 0;
@@ -1717,6 +1730,17 @@ body {
   .category__item-box {
     margin-bottom: 0;
   }
+  .route {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .instruction {
     margin-top: 50px;
     margin-bottom: 80px;
@@ -1789,7 +1813,6 @@ body {
     height: 211px;
   }
   .seo {
-    max-width: 76%;
     margin-left: auto;
   }
   .seo__title {
@@ -1905,7 +1928,6 @@ body {
   }
   .seo {
     padding-top: 4px;
-    max-width: 71%;
   }
   .seo__title {
     margin-bottom: 60px;
