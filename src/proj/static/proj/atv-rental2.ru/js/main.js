@@ -51,7 +51,7 @@ $(function () {
         items: 1,
         smartSpeed: 1000,
         // autoWidth: true,
-        // wrapAround: true,
+        wrapAround: true,
         dots: true
 
     });
