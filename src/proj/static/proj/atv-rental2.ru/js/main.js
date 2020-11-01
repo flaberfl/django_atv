@@ -45,17 +45,26 @@ $(function () {
 
     });
 
-    photoSlider.owlCarousel({
-        // loop: true,
-        center: true,
-        items: 1,
-        smartSpeed: 1000,
-        // autoWidth: true,
-        wrapAround: true,
-        dots: true
+    // photoSlider.owlCarousel({
+    //     // loop: true,
+    //     // center: true,
+    //     items: 0.9,
+    //     smartSpeed: 1000,
 
+
+    //     autoWidth: true,
+    //     // wrapAround: true,
+    //     dots: true,
+
+    // });
+
+    $('.route__photo-slider').slick({
+    //   infinite: true,
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
     });
 
-
+    
 
 });

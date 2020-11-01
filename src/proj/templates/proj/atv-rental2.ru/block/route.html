@@ -19,14 +19,18 @@
     <div class="route__sidebar sidebar">
         <div class="sidebar__content">
             <div class="sidebar__tabs">
-                <div class="sidebar__tab active" data-id="1"><a href="#category">О маршруте</a></div>
-                <div class="sidebar__tab" data-id="2"><a href="#category">Наш адрес</a></div>
-                <div class="sidebar__tab" data-id="3"><a href="#category">Выберите квадроцикл</a></div>
-                <div class="sidebar__tab" data-id="4"><a href="#category">Программа маршрута</a></div>
-                <div class="sidebar__tab" data-id="5"><a href="#category">Фотографии катаний</a></div>
-                <div class="sidebar__tab" data-id="6"><a href="#category">Что ещё важно знать?</a></div>
-                <div class="sidebar__tab" data-id="6"><a href="#category">Ответы на вопросы</a></div>
-                <div class="sidebar__tab" data-id="6"><a href="#category">Смотреть другие виды></div>
+                <div class="route__sidebar-tab sidebar__tab active" data-id="1"><a href="#category">О маршруте</a></div>
+                <div class="route__sidebar-tab sidebar__tab" data-id="2"><a href="#category">Наш адрес</a></div>
+                <div class="route__sidebar-tab sidebar__tab" data-id="3"><a href="#category">Выберите квадроцикл</a>
+                </div>
+                <div class="route__sidebar-tab sidebar__tab" data-id="4"><a href="#category">Программа маршрута</a>
+                </div>
+                <div class="route__sidebar-tab sidebar__tab" data-id="5"><a href="#category">Фотографии катаний</a>
+                </div>
+                <div class="route__sidebar-tab sidebar__tab" data-id="6"><a href="#category">Что ещё важно знать?</a>
+                </div>
+                <div class="route__sidebar-tab sidebar__tab" data-id="6"><a href="#category">Ответы на вопросы</a></div>
+                <div class="route__sidebar-tab sidebar__tab" data-id="6"><a href="#category">Смотреть другие виды></div>
             </div>
         </div>
     </div>
@@ -36,7 +40,7 @@
 
         <div class="wrapper">
 
-            <div class="category__title route__title">О маршруте</div>
+            <div class="category__title route__title route__title-rt">О маршруте</div>
 
             <div class="category__presents route__presents">
 
@@ -76,6 +80,7 @@
                             officia consequat officia culpa sunt. Do nostrud eu quis </p>
                     </div>
                 </div>
+
                 <div class="category__route-map">
                     <img src="{% static static_prefix|add:'../img/map-mobile.jpg' %}" alt="">
                     <div class="category__route-map-text">
@@ -159,18 +164,25 @@
 
             </div>
 
-            <!-- <div class="route__photo">
+            <div class="route__photo">
                 <div class="route__photo-title category__title">Фотографии с катаний</div>
-                <div class="owl-carousel route__photo-slider" id="photoSlider">
-                    <img class="route__photo-item" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-                    <img class="route__photo-item" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-                    <img class="route__photo-item" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-                    <img class="route__photo-item" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-                    <img class="route__photo-item" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-                    <img class="route__photo-item" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
-                    <img class="route__photo-item" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
+                <div class="route__photo-slider" id="photoSlider">
+                    <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}"
+                        alt="">
+                    <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}"
+                        alt="">
+                    <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}"
+                        alt="">
+                    <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}"
+                        alt="">
+                    <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}"
+                        alt="">
+                    <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}"
+                        alt="">
+                    <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}"
+                        alt="">
                 </div>
-            </div> -->
+            </div>
 
             <div class="route__knowledge">
                 <div class="route-title category__title">Что необходимо ещё знать?</div>

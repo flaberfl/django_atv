@@ -468,6 +468,7 @@ html {
 
 body {
   min-width: 320px;
+  overflow: auto;
   overflow-x: hidden;
   font-family: 'Noto Sans', sans-serif;
   font-size: 18px;
@@ -753,6 +754,10 @@ body {
   background: #EDF1F7;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  width: 100%;
 }
 
 .header__top-inner {
@@ -1191,11 +1196,20 @@ body {
   margin-bottom: 16px;
 }
 
+.route__photo {
+  display: none;
+  width: 100%;
+}
+
 .route__photo-title {
   margin-top: 30px;
   margin-bottom: 44px;
   text-align: left;
   padding-left: 10px;
+}
+
+.route__photo-item {
+  width: 100%;
 }
 
 .route__knowledge {
@@ -1339,6 +1353,19 @@ body {
   .header__title {
     text-align: center;
   }
+  .route-title {
+    text-align: center;
+    padding-top: 14px;
+  }
+  .route__title-rt {
+    padding-top: 26px;
+  }
+  .route_instruction {
+    padding-top: 20px;
+  }
+  .gift__title {
+    text-align: center;
+  }
 }
 
 @media (min-width: 576px) {
@@ -1387,6 +1414,9 @@ body {
   }
   .gift__print-card-text {
     width: 346px;
+  }
+  .route__title {
+    text-align: center;
   }
   .footer__content {
     display: -webkit-box;
@@ -1595,6 +1625,21 @@ body {
         -ms-flex-pack: distribute;
             justify-content: space-around;
   }
+  .category__route-about {
+    margin-right: 20px;
+    padding-right: 0;
+  }
+  .category__route-description {
+    padding-left: 20px;
+  }
+  .category__route-map {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .category__route-map p {
+    max-width: 380px;
+    padding-right: 41px;
+  }
 }
 
 @media (min-width: 880px) {
@@ -1730,6 +1775,17 @@ body {
   .category__item-box {
     margin-bottom: 0;
   }
+  .category__route-map {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .category__route-map-text p {
+    max-width: 310px;
+    padding-right: 0;
+  }
+  .category__route-about {
+    margin-right: 0;
+  }
   .route {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1740,6 +1796,17 @@ body {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .route__title {
+    padding-left: 0;
+  }
+  .route__title-rt {
+    padding-top: 0;
+  }
+  .route__sidebar-tab {
+    padding: 15px 9px 15px 26px;
+    width: 240px;
+    font-size: 14px;
   }
   .instruction {
     margin-top: 50px;
@@ -1969,6 +2036,9 @@ body {
 @media (min-width: 1300px) {
   .sidebar__tab {
     padding: 28px 112px 28px 123px;
+  }
+  .route__sidebar-tab {
+    padding: 28px 70px 28px 80px;
   }
   .gift__column-right {
     margin-right: 51px;
