@@ -81,31 +81,33 @@
                     </div>
                 </div>
 
-                <div class="category__route-map">
-                    <img src="{% static static_prefix|add:'../img/map-mobile.jpg' %}" alt="">
-                    <div class="category__route-map-text">
-                        <p>
-                            Город Москва, улица Центральная, дом 10
-                            (метро Проспект Кирова)
-                        </p>
-                    </div>
-                </div>
 
-                <div class="category__route-date">
-                    <div class="category__route-date-title">Выберите желаемую дату и время катания</div>
-                    <div class="category__route-date-btn">
-                        <a href="" class="button data-btn">Выбери время</a>
-                        <a href="" class="button data-btn">Выбери дату</a>
-                    </div>
-                </div>
 
+            </div>
+
+            <div class="category__route-map">
+                <img src="{% static static_prefix|add:'../img/map-mobile.jpg' %}" alt="">
+                <img src="{% static static_prefix|add:'../img/map-desc.jpg' %}" alt="">
+                <div class="category__route-map-text">
+                    <p>
+                        Город Москва, улица Центральная, дом 10
+                        (метро Проспект Кирова)
+                    </p>
+                </div>
+            </div>
+
+            <div class="category__select-date">
+                <div class="select-date-title category__title">Выберите желаемую дату и время катания</div>
+                <div class="select-date-buttons">
+                    <a class="button date-btn href=" #">Выбери время</a>
+                    <a class="button date-btn href=" #">Выбери дату</a>
+                </div>
             </div>
 
             <div class="route__select">
 
-                <div class="temp">Потом разобраться с табами</div>
 
-                <div class="route__select-title">Выберите подходящий квадроцикл</div>
+                <div class="route__select-title category__title">Выберите подходящий квадроцикл</div>
 
                 <div class="route__select-inner">
 
@@ -113,27 +115,28 @@
 
                         <div class="owl-carousel swipe__tabs" id="swipeTabs">
 
-                            <div class="swipe__tab active" data-id="#">
+                            <div class="swipe__tab active" data-id="selectItem_1">
 
-                                <input id="radio-1" type="radio" name="radio" value="1" checked>
-                                <label class="swipe-radio-title" for="radio-1">Квадроцикл Yamakasi RT 3000</label>
+                                <input class="swipe__input" id="radio-1" type="radio" name="swipetabs" value="1"
+                                    checked>
+                                <label class="swipe__label" for="radio-1">Квадроцикл Yamakasi RT 3000</label>
 
                             </div>
 
-                            <div class="swipe__tab" data-id="#">
-                                <div class="swipe__radio">
-                                    <input id="radio-1" type="radio" name="radio" value="1">
-                                    <label class="swipe-radio-title" for="radio-1">Квадроцикл Yamakasi RT
-                                        3000</label>
-                                </div>
+                            <div class="swipe__tab" data-id="selectItem_2">
+
+                                <input class="swipe__input" id="radio-1" type="radio" name="swipetabs">
+                                <label class="swipe__label" for="radio-1">Квадроцикл
+                                    Yamakasi RT 5000</label>
+
                             </div>
 
-                            <div class="swipe__tab" data-id="#">
-                                <div class="swipe__radio">
-                                    <input id="radio-1" type="radio" name="radio" value="1">
-                                    <label class="swipe-radio-title" for="radio-1">Квадроцикл Yamakasi RT
-                                        3000</label>
-                                </div>
+                            <div class="swipe__tab" data-id="selectItem_3">
+
+                                <input class="swipe__input" id="radio-1" type="radio" name="swipetabs">
+                                <label class="swipe__label" for="radio-1">Квадроцикл
+                                    Yamakasi RT 7000</label>
+
                             </div>
 
                         </div>
@@ -141,38 +144,120 @@
 
                     <div class="route__select-cards">
 
-                        <div class="route__select-card">
+                        <div class="route__select-card active-card-tab" id="selectItem_1">
 
                             <div class="select-card-img">
-
+                                <img src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
+                                <div class="category__item-top-title">Квадроциклы</div>
                             </div>
 
                             <div class="select-card-description">
+                                <div class="select-card-title">Квадроцикл Yamakasi RT 3000</div>
+                                <div class="select-card-content">
+                                    <div class="select-card-text-line">
+                                        <img src="{% static static_prefix|add:'../img/svg/gridicons_time-select.svg' %}"
+                                            alt="">
+                                        <p>Время катания: 1 час</p>
+                                    </div>
+                                    <div class="select-card-text-line">
+                                        <img src="{% static static_prefix|add:'../img/svg/max-speed-select.svg' %}"
+                                            alt="">
+                                        <p>Максимальная скорость: 99 км.ч</p>
+                                    </div>
+                                    <div class="select-card-text-line">
+                                        <img src="{% static static_prefix|add:'../img/svg/road-select.svg' %}" alt="">
+                                        <p>В наличии: <span class="num-item">2</span></p>
+                                    </div>
+                                </div>
+                                <div class="select-button-title">Выберите количество</div>
 
+                                <div class="select-card-button">
+                                    <p class="card-button-price">2 500 р</p>
+                                    <div class="button category__button">
+                                        <a href="#">1 квадроцикл</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="route__select-card" id="selectItem_2">
+
+                            <div class="select-card-img">
+                                <img src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
+                                <div class="category__item-top-title">Квадроциклы</div>
+                            </div>
+
+                            <div class="select-card-description">
+                                <div class="select-card-title">Квадроцикл Yamakasi RT 5000</div>
+                                <div class="select-card-content">
+                                    <div class="select-card-text-line">
+                                        <img src="{% static static_prefix|add:'../img/svg/gridicons_time-select.svg' %}"
+                                            alt="">
+                                        <p>Время катания: 1 час</p>
+                                    </div>
+                                    <div class="select-card-text-line">
+                                        <img src="{% static static_prefix|add:'../img/svg/max-speed-select.svg' %}"
+                                            alt="">
+                                        <p>Максимальная скорость: 99 км.ч</p>
+                                    </div>
+                                    <div class="select-card-text-line">
+                                        <img src="{% static static_prefix|add:'../img/svg/road-select.svg' %}" alt="">
+                                        <p>В наличии: <span class="num-item">2</span></p>
+                                    </div>
+                                </div>
+                                <div class="select-button-title">Выберите количество</div>
+
+                                <div class="select-card-button">
+                                    <p class="card-button-price">2 500 р</p>
+                                    <div class="button category__button">
+                                        <a href="service_list">1 квадроцикл</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="route__select-card" id="selectItem_3">
+
+                            <div class="select-card-img">
+                                <img src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
+                                <div class="category__item-top-title">Квадроциклы</div>
+                            </div>
+
+                            <div class="select-card-description">
+                                <div class="select-card-title">Квадроцикл Yamakasi RT 7000</div>
+                                <div class="select-card-content">
+                                    <div class="select-card-text-line">
+                                        <img src="{% static static_prefix|add:'../img/svg/gridicons_time-select.svg' %}"
+                                            alt="">
+                                        <p>Время катания: 1 час</p>
+                                    </div>
+                                    <div class="select-card-text-line">
+                                        <img src="{% static static_prefix|add:'../img/svg/max-speed-select.svg' %}"
+                                            alt="">
+                                        <p>Максимальная скорость: 99 км.ч</p>
+                                    </div>
+                                    <div class="select-card-text-line">
+                                        <img src="{% static static_prefix|add:'../img/svg/road-select.svg' %}" alt="">
+                                        <p>В наличии: <span class="num-item">2</span></p>
+                                    </div>
+                                </div>
+                                <div class="select-button-title">Выберите количество</div>
+
+                                <div class="select-card-button">
+                                    <p class="card-button-price">2 500 р</p>
+                                    <div class="button category__button">
+                                        <a href="service_list">1 квадроцикл</a>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
 
                     </div> <!-- route__select-cards -->
-
-
-
                 </div>
-                <!--  <div class="route__select-card">
 
-                    <div class="select-card-tabs">
-                        <div class="select-card-tab">Квадроцикл Yamakasi RT 3000</div>
-                        <div class="select-card-tab">Квадроцикл Yamakasi RT 5000</div>
-                        <div class="select-card-tab">Квадроцикл Yamakasi RT 7000</div>
-                    </div>
-                    <div class="select-card-content">
-                        <div class="select-card-content-item">
-                            <img class="select-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt=">
-
-                        </div>
-                    </div>
-
-                </div> -->
 
             </div>
 
@@ -207,21 +292,26 @@
                 <div class="route-title category__title">Как будет происходить катание?</div>
 
                 <div class="route-text">
-                    <p>1. Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1
+                    <p>1. Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг
+                        1Шаг 1Шаг 1Шаг 1
                     </p>
-                    <p>2. Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1
+                    <p>2. Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг
+                        1Шаг 1Шаг 1Шаг 1
                     </p>
-                    <p>3. Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1
+                    <p>3. Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг
+                        1Шаг 1Шаг 1Шаг 1
                     </p>
-                    <p>4. Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1
+                    <p>4. Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг
+                        1Шаг 1Шаг 1Шаг 1
                     </p>
-                    <p>5. Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1
+                    <p>5. Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг 1Шаг
+                        1Шаг 1Шаг 1Шаг 1
                     </p>
                 </div>
 
             </div>
 
-            <div class="route__photo">
+            <!-- <div class="route__photo">
                 <div class="route__photo-title category__title">Фотографии с катаний</div>
                 <div class="route__photo-slider" id="photoSlider">
                     <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}"
@@ -239,7 +329,7 @@
                     <img class="route__photo-item" src="{% static static_prefix|add:'../img/big-photo-slider.jpg' %}"
                         alt="">
                 </div>
-            </div>
+            </div> -->
 
             <div class="route__knowledge">
                 <div class="route-title category__title">Что необходимо ещё знать?</div>
@@ -332,7 +422,8 @@
                     </div>
 
                     <div class="container category__item-box">
-                        <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”</div>
+                        <div class="category__item-title">Название маршрута “Топовый в своём роде
+                            маршрут”</div>
 
                         <div class="category__item-text">
 
@@ -346,7 +437,8 @@
                             </div>
                             <div class="category__item-text-line">
                                 <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
-                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от
+                                    МКАД)</p>
                             </div>
 
                         </div>
@@ -372,7 +464,8 @@
                     </div>
 
                     <div class="container category__item-box">
-                        <div class="category__item-title">Название маршрута “Топовый в своём роде маршрут”</div>
+                        <div class="category__item-title">Название маршрута “Топовый в своём роде
+                            маршрут”</div>
 
                         <div class="category__item-text">
 
@@ -386,7 +479,8 @@
                             </div>
                             <div class="category__item-text-line">
                                 <img src="{% static static_prefix|add:'../img/svg/placeholder__1.svg' %}" alt="">
-                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от МКАД)</p>
+                                <p>Московская область, деревня Грибки (Дмитровское шоссе, 5 км от
+                                    МКАД)</p>
                             </div>
 
                         </div>
@@ -413,38 +507,44 @@
                 <div class="seo__content">
                     <img class="seo__content-img" src="{% static static_prefix|add:'../img/atv_desktop.jpg' %}" alt="">
                     <p class="seo__content-description">
-                        In laboris cupidatat irure minim velit do ipsum anim aute do Lorem labore. Elit
+                        In laboris cupidatat irure minim velit do ipsum anim aute do Lorem labore.
+                        Elit
                         anim
                         officia id ut
                         sunt
                         magna ut commodo elit laboris. Ad veniam fugiat amet quis officia aliqua ex
                         ipsum non
                         occaecat qui
-                        pariatur. Consectetur ex incididunt consectetur deserunt in enim enim consequat
+                        pariatur. Consectetur ex incididunt consectetur deserunt in enim enim
+                        consequat
                         enim
                         sint. Est aute
                         consectetur non ut veniam laborum exercitation. Aute consectetur qui magna
                         aliquip amet
                         exercitation.
-                        Excepteur irure mollit excepteur cillum do sit officia consequat officia culpa
+                        Excepteur irure mollit excepteur cillum do sit officia consequat officia
+                        culpa
                         sunt. Do
                         nostrud eu
                         quis
-                        esse ullamco reprehenderit qui ut ea. Laborum cupidatat quis adipisicing esse et
+                        esse ullamco reprehenderit qui ut ea. Laborum cupidatat quis adipisicing
+                        esse et
                         et
                         nostrud irure
                         adipisicing amet reprehenderit irure deserunt. Et et duis ex amet occaecat
                         ullamco
                         ullamco ipsum
                         dolor.
-                        Sint sunt cillum quis nulla pariatur sunt cupidatat. Exercitation anim veniam
+                        Sint sunt cillum quis nulla pariatur sunt cupidatat. Exercitation anim
+                        veniam
                         quis non
                         excepteur.
                         Aliqua
                         est consequat nisi cillum sint ullamco Lorem nisi mollit aliqua cupidatat
                         aliquip do.
                         Ipsum aliquip
-                        cupidatat ipsum elit ea pariatur occaecat minim ullamco id exercitation. Ea ea
+                        cupidatat ipsum elit ea pariatur occaecat minim ullamco id exercitation. Ea
+                        ea
                         esse aute
                         dolore
                         veniam
@@ -464,38 +564,44 @@
                     <img class="seo__content-img" src="{% static static_prefix|add:'../img/atv_desktop.jpg' %}" alt="">
 
                     <p class="seo__content-description">
-                        In laboris cupidatat irure minim velit do ipsum anim aute do Lorem labore. Elit
+                        In laboris cupidatat irure minim velit do ipsum anim aute do Lorem labore.
+                        Elit
                         anim
                         officia id ut
                         sunt
                         magna ut commodo elit laboris. Ad veniam fugiat amet quis officia aliqua ex
                         ipsum non
                         occaecat qui
-                        pariatur. Consectetur ex incididunt consectetur deserunt in enim enim consequat
+                        pariatur. Consectetur ex incididunt consectetur deserunt in enim enim
+                        consequat
                         enim
                         sint. Est aute
                         consectetur non ut veniam laborum exercitation. Aute consectetur qui magna
                         aliquip amet
                         exercitation.
-                        Excepteur irure mollit excepteur cillum do sit officia consequat officia culpa
+                        Excepteur irure mollit excepteur cillum do sit officia consequat officia
+                        culpa
                         sunt. Do
                         nostrud eu
                         quis
-                        esse ullamco reprehenderit qui ut ea. Laborum cupidatat quis adipisicing esse et
+                        esse ullamco reprehenderit qui ut ea. Laborum cupidatat quis adipisicing
+                        esse et
                         et
                         nostrud irure
                         adipisicing amet reprehenderit irure deserunt. Et et duis ex amet occaecat
                         ullamco
                         ullamco ipsum
                         dolor.
-                        Sint sunt cillum quis nulla pariatur sunt cupidatat. Exercitation anim veniam
+                        Sint sunt cillum quis nulla pariatur sunt cupidatat. Exercitation anim
+                        veniam
                         quis non
                         excepteur.
                         Aliqua
                         est consequat nisi cillum sint ullamco Lorem nisi mollit aliqua cupidatat
                         aliquip do.
                         Ipsum aliquip
-                        cupidatat ipsum elit ea pariatur occaecat minim ullamco id exercitation. Ea ea
+                        cupidatat ipsum elit ea pariatur occaecat minim ullamco id exercitation. Ea
+                        ea
                         esse aute
                         dolore
                         veniam

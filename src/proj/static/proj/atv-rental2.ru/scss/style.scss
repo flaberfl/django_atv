@@ -112,6 +112,18 @@ body {
     border-radius: 36px;
 }
 
+.date-btn {
+    width: 155px;
+    height: 51px;
+    padding: 0;
+    line-height: 51px;
+    text-align: center;
+}
+
+.date-btn+.date-btn {
+    margin-left: 10px;
+}
+
 
 
 /// Бургер меню ///
@@ -242,7 +254,9 @@ body {
 }
 
 .owl-carousel .owl-item {
-    min-height: 70px;
+    // min-height: 70px;
+    min-height: 92px; // Потом обязательно исправить
+
 }
 
 .owl-dots {
@@ -304,24 +318,85 @@ body {
 
 }
 
-// .swipe-slider {
-//     max-width: 802px;
-// }
-
 .swipe__tab {
-    background: #EDF1F7;
-    width: 351px;
-    height: 80px;
+    position: relative;
+    padding: 17px 52px 20px 63px;
+    background: #E7E7E7;
 
     &.active {
+        background: #EDF1F7;
         color: #000;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     }
 }
 
-.swipe-radio-title {
-    font-size: 18px;
-    font-weight: 800;
+.swipe {
+
+    &__input[type=radio] {
+        // appearance: none;
+        display: none;
+
+        position: absolute;
+        left: 27px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+
+        &:checked+.swipe__label:after {
+            opacity: 1;
+        }
+
+    }
+
+    &__label {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 800;
+        width: 236px;
+        user-select: none;
+
+        &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 18px;
+            height: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 24px;
+            border-radius: 50%;
+            background: #C4C4C4;
+            z-index: 1;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            width: 18px;
+            height: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 24px;
+            background: linear-gradient(223.45deg, #00B6F8 15.38%, #03D4F9 86.59%);
+            box-shadow: 0px 0px 4px #01C4F8;
+            border-radius: 36px;
+            z-index: 3;
+            opacity: 0;
+        }
+    }
+
+
 }
+
+// .swipe__tabs {
+
+//     &.owl-item {
+//         min-height: 80px;
+//     }
+
+// }
 
 // .route__select {
 //     display: none;

@@ -1,5 +1,7 @@
 $(function () {
 
+    // Табы для сайдбара и мобильного сладер-меню
+
     $('.sidebar__content .sidebar__tab, .mobile__slider .mobile__tab').on('click', function (event) {
         var id = $(this).attr('data-id');
         $('.category__content').find('.category__items').removeClass('active-tab').hide();
@@ -9,6 +11,8 @@ $(function () {
         return false;
     });
 
+    // Табы для меню гамбургер
+
     $('.menu__hamburger .menu__item').on('click', function (event) {
         var id = $(this).attr('data-id');
         $('.category__content').find('.category__items').removeClass('active-tab').hide();
@@ -17,6 +21,18 @@ $(function () {
         $('#' + id).addClass('active-tab').fadeIn();
         return false;
     });
+
+    // Табы для свайпера выбора техники
+
+    $('.swipe-slider .swipe__tab').on('click', function (event) {
+        var id = $(this).attr('data-id');
+        $('.route__select-cards').find('.route__select-card').removeClass('active-card-tab').hide();
+        $('.swipe-slider .swipe__tabs').find('.swipe__tab').removeClass('active');
+        $(this).addClass('active');
+        $('#' + id).addClass('active-card-tab').fadeIn();
+        return false;
+    });
+
 
     const mobileSlider = $('#mobileSlider');
     const photoSlider = $('#photoSlider');
@@ -50,31 +66,27 @@ $(function () {
         loop: true,
         // center: true,
         smartSpeed: 1000,
-        // autoWidth: true,
+        autoWidth: true,
         // wrapAround: true,
         dots: false,
+        autoplay: true,
+        autoplayTimeout: 5000,
         touchDrag: true
 
     });
     // photoSlider.owlCarousel({
     //     // loop: true,
     //     // center: true,
-    //     items: 0.9,
+    //     items: 1,
     //     smartSpeed: 1000,
 
 
     //     autoWidth: true,
-    //     // wrapAround: true,
-    //     dots: true,
+    //     wrapAround: true,
+    //     dots: true
 
     // });
 
-    // $('.route__photo-slider').slick({
-    //     //   infinite: true,
-    //     dots: true,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1
-    // });
 
 
 

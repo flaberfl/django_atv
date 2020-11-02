@@ -164,6 +164,6 @@
 }
 
 .active-tab {
-    display: flex;
+    display: flex; // Активный таб - для карточки свайпа изменит flex-direction
     flex-direction: column;
 }
