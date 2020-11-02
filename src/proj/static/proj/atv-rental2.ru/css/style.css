@@ -756,6 +756,21 @@ body {
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+.swipe__tab {
+  background: #EDF1F7;
+  width: 351px;
+  height: 80px;
+}
+
+.swipe__tab.active {
+  color: #000;
+}
+
+.swipe-radio-title {
+  font-size: 18px;
+  font-weight: 800;
+}
+
 .header {
   width: 100%;
 }

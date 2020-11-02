@@ -304,6 +304,28 @@ body {
 
 }
 
+// .swipe-slider {
+//     max-width: 802px;
+// }
+
+.swipe__tab {
+    background: #EDF1F7;
+    width: 351px;
+    height: 80px;
+
+    &.active {
+        color: #000;
+    }
+}
+
+.swipe-radio-title {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+// .route__select {
+//     display: none;
+// }
 
 
 

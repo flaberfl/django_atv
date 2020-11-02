@@ -19,7 +19,8 @@ $(function () {
     });
 
     const mobileSlider = $('#mobileSlider');
-    const photoSlider = $('#photoSlider')
+    const photoSlider = $('#photoSlider');
+    const swipeTabs = $('#swipeTabs');
 
     mobileSlider.owlCarousel({
         loop: true,
@@ -45,6 +46,16 @@ $(function () {
 
     });
 
+    swipeTabs.owlCarousel({
+        loop: true,
+        // center: true,
+        smartSpeed: 1000,
+        // autoWidth: true,
+        // wrapAround: true,
+        dots: false,
+        touchDrag: true
+
+    });
     // photoSlider.owlCarousel({
     //     // loop: true,
     //     // center: true,
@@ -58,13 +69,13 @@ $(function () {
 
     // });
 
-    $('.route__photo-slider').slick({
-    //   infinite: true,
-      dots: true,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    });
+    // $('.route__photo-slider').slick({
+    //     //   infinite: true,
+    //     dots: true,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1
+    // });
 
-    
+
 
 });
