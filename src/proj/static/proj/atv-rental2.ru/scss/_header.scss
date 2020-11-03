@@ -1,47 +1,47 @@
 .header {
 
-    width: 100%;
+  width: 100%;
 
-    &__top-inner {
-        display: flex;
-        justify-content: space-between;
-        padding-left: 18px;
-    }
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 18px;
+  }
 
-    &__logo {
-        margin-top: 39px;
-    }
+  &__logo {
+    margin-top: 39px;
+  }
 
-    &__title {
-        font-size: 25px;
-        font-weight: 800;
-        line-height: 34px;
-        // letter-spacing: -0.3px;
-        letter-spacing: -0.6px;
-        margin-bottom: 25px;
-    }
+  &__title {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 34px;
+    // letter-spacing: -0.3px;
+    letter-spacing: -0.6px;
+    margin-bottom: 25px;
+  }
 
-    &__advantages {
-        padding-left: 35px;
-        margin-bottom: 16px;
-    }
+  &__advantages {
+    padding-left: 35px;
+    margin-bottom: 16px;
+  }
 
-    &__button-wrap {
-        text-align: center;
-    }
+  &__button-wrap {
+    text-align: center;
+  }
 
-    &__text-wrap {
-        display: flex;
-        justify-content: center;
-    }
+  &__text-wrap {
+    display: flex;
+    justify-content: center;
+  }
 
-    &__img {
-        display: none;
-    }
+  &__img {
+    display: none;
+  }
 
-    &__button-service {
-        padding-right: 41px;
-        padding-left: 41px;
-    }
+  &__button-service {
+    padding-right: 41px;
+    padding-left: 41px;
+  }
 
 }

@@ -10,12 +10,10 @@
   {% block title %}
   {% endblock %}
 
-  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
-  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css" /> -->
+
   <link rel="stylesheet" href="{% static static_prefix|add:'../css/libs/owl.carousel.min.css' %}">
   <link rel="stylesheet" href="{% static static_prefix|add:'../css/libs/owl.theme.default.min.css' %}">
-  <!-- <link rel="stylesheet" href="{% static static_prefix|add:'../css/libs/slick.css' %}"> -->
-  <!-- <link rel="stylesheet" href="{% static static_prefix|add:'../css/libs/slick-theme.css' %}"> -->
+
   <link rel="stylesheet" href="{% static static_prefix|add:'../css/style.min.css' %}">
 
   {% include './subtemplates/favicon_template.html' %}
@@ -32,10 +30,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="{% static static_prefix|add:'../js/libs/owl.carousel.min.js' %}"></script>
-  <!-- <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-  <!-- <script src="{% static static_prefix|add:'../js/libs/slick.min.js' %}"></script> -->
-
-
 
   <script src="{% static static_prefix|add:'../js/main.js' %}"></script>
 

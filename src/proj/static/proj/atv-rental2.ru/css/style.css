@@ -484,7 +484,6 @@ body {
 }
 
 .wrapper {
-  max-width: 903px;
   margin-left: auto;
 }
 
@@ -710,7 +709,7 @@ body {
 }
 
 .owl-carousel .owl-item {
-  min-height: 92px;
+  min-height: 70px;
 }
 
 .owl-dots {
@@ -1280,21 +1279,19 @@ body {
   line-height: 19px;
   padding: 44px 33px 28px;
   background-color: #EDF1F7;
-  display: inline-block;
 }
 
 .route-text p {
   margin-bottom: 16px;
 }
 
-.route__photo {
-  width: 100%;
+.route-select-date {
+  display: none;
 }
 
 .route__photo-title {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 44px;
-  text-align: left;
   padding-left: 10px;
 }
 
@@ -1412,13 +1409,13 @@ body {
   height: 100%;
 }
 
-.category__route-about-title {
-  margin-left: 20px;
-  padding-top: 30px;
-}
-
 .category__route-about {
   background-color: #EDF1F7;
+}
+
+.category__route-about-title {
+  padding-left: 20px;
+  padding-top: 30px;
 }
 
 .category__route-about-text {
@@ -1430,16 +1427,20 @@ body {
   line-height: 19px;
 }
 
-.category__route-map {
+.category__route-description {
+  background-color: #EDF1F7;
+}
+
+.route__map {
   position: relative;
   margin-top: 60px;
 }
 
-.category__route-map img {
+.route__map img {
   width: 100%;
 }
 
-.category__route-map-text {
+.route__map-text {
   position: absolute;
   content: "";
   font-size: 14px;
@@ -1452,18 +1453,22 @@ body {
   width: 100%;
 }
 
-.category__route-map-text p {
+.route__map-text p {
   display: inline-block;
   max-width: 310px;
   padding-right: 12px;
   padding-top: 3px;
 }
 
-.category__route-map img:nth-child(2) {
+.route__map img:nth-child(2) {
   display: none;
 }
 
-route__photo {
+.route__select {
+  display: none;
+}
+
+.route__photo-desktop {
   display: none;
 }
 
@@ -1771,12 +1776,6 @@ route__photo {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .category__route-map img:nth-child(1) {
-    display: none;
-  }
-  .category__route-map img:nth-child(2) {
-    display: block;
-  }
   .logo__img {
     margin-right: 12px;
   }
@@ -1814,19 +1813,37 @@ route__photo {
             justify-content: space-around;
   }
   .category__route-about {
-    margin-right: 20px;
-    padding-right: 0;
+    background: transparent;
   }
   .category__route-description {
     padding-left: 20px;
   }
-  .category__route-map {
+  .route__map {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .route__map p {
+    max-width: 380px;
+  }
+  .route__map img:nth-child(1) {
+    display: none;
+  }
+  .route__map img:nth-child(2) {
+    display: block;
+  }
+  .route-select-date {
+    display: block;
+    padding-top: 65px;
+  }
+  .select-date-buttons {
+    text-align: center;
+  }
+  .date-btn + .date-btn {
+    margin-left: 70px;
+  }
+  .seo {
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .category__route-map p {
-    max-width: 380px;
-    padding-right: 41px;
   }
 }
 
@@ -1834,11 +1851,26 @@ route__photo {
   .header__title {
     max-width: 500px;
   }
+  .route__photo {
+    display: none;
+  }
+  .route__photo-desktop {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (min-width: 992px) {
   .wrapper {
     padding-right: 30px;
+    max-width: 903px;
   }
   .sidebar {
     display: block;
@@ -1996,6 +2028,16 @@ route__photo {
     font-size: 17px;
     width: 240px;
   }
+  .route__map {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .select-date-buttons {
+    text-align: left;
+  }
+  .date-btn + .date-btn {
+    margin-left: 10px;
+  }
   .instruction {
     margin-top: 50px;
     margin-bottom: 80px;
@@ -2068,6 +2110,8 @@ route__photo {
     height: 211px;
   }
   .seo {
+    padding-left: 0;
+    padding-right: 0;
     margin-left: auto;
   }
   .seo__title {
@@ -2237,7 +2281,7 @@ route__photo {
   .gift__column-right {
     margin-right: 51px;
   }
-  .category__route-map {
+  .route__map {
     margin-bottom: 90px;
   }
   .select-date-buttons {
