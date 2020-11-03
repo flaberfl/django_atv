@@ -250,6 +250,23 @@ body {
   }
 }
 
+.route__sidebar-tab {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 28px 112px 28px 123px;
+
+  &:hover {
+    background: #EDF1F7;
+    // opacity: 0.5;
+    color: black;
+    transition: all 0.5s;
+
+  }
+
+}
+
 .invisible-link {
   position: absolute;
   content: "";
