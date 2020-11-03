@@ -575,6 +575,11 @@
     margin-left: 0;
   }
 
+  .route__photo-desktop {
+    max-width: 712px;
+    margin: auto;
+  }
+
   .select-date-buttons {
     text-align: left;
   }
@@ -688,6 +693,14 @@
 
 }
 
+@media (min-width: 1080px) {
+
+  .route__photo-desktop {
+    max-width: 803px;
+  }
+
+}
+
 @media (min-width: 1200px) {
 
   body {
@@ -784,11 +797,6 @@
     }
 
     &__presents {
-      // display: flex;
-      // justify-content: space-between;
-      // max-width: 750px;
-      // padding-left: 0;
-      // margin-bottom: 68px;
 
       &-item {
 
@@ -800,12 +808,6 @@
         }
       }
     }
-
-    // &__items {
-    //     display: flex;
-    //     flex-direction: column;
-
-    // }
 
     &__item {
 
@@ -828,6 +830,17 @@
 
     }
   }
+
+  .route__photo-desktop {
+    max-width: 745px;
+    padding-top: 60px;
+  }
+
+  .route-select-date {
+    padding-top: 92px;
+    padding-bottom: 60px;
+  }
+
 
   .instruction {
     margin-top: 5px;
@@ -927,10 +940,18 @@
     padding-bottom: 100px;
   }
 
+  .route__photo-desktop {
+    max-width: 772px;
+  }
+
 }
 
 @media (min-width: 1366px) {
   .route__sidebar-tab {
     width: 368px;
+  }
+
+  .route__photo-desktop {
+    max-width: 903px;
   }
 }

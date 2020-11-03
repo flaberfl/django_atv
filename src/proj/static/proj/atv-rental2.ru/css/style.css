@@ -2032,6 +2032,10 @@ body {
     margin-right: 0;
     margin-left: 0;
   }
+  .route__photo-desktop {
+    max-width: 712px;
+    margin: auto;
+  }
   .select-date-buttons {
     text-align: left;
   }
@@ -2123,6 +2127,12 @@ body {
   }
 }
 
+@media (min-width: 1080px) {
+  .route__photo-desktop {
+    max-width: 803px;
+  }
+}
+
 @media (min-width: 1200px) {
   body {
     max-width: 1366px;
@@ -2209,6 +2219,14 @@ body {
     width: 351px;
     height: 351px;
   }
+  .route__photo-desktop {
+    max-width: 745px;
+    padding-top: 60px;
+  }
+  .route-select-date {
+    padding-top: 92px;
+    padding-bottom: 60px;
+  }
   .instruction {
     margin-top: 5px;
     margin-bottom: 78px;
@@ -2290,10 +2308,16 @@ body {
   .route__select {
     padding-bottom: 100px;
   }
+  .route__photo-desktop {
+    max-width: 772px;
+  }
 }
 
 @media (min-width: 1366px) {
   .route__sidebar-tab {
     width: 368px;
+  }
+  .route__photo-desktop {
+    max-width: 903px;
   }
 }
