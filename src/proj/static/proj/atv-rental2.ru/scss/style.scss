@@ -31,10 +31,7 @@ body {
 }
 
 .wrapper {
-  // Контейнер для правой половины
-  // max-width: 903px;
-  // padding-right: 99px; c 992 включен
-  margin-left: auto; // Это спасло меня ))
+  margin-left: auto;
 }
 
 
@@ -50,7 +47,6 @@ body {
 }
 
 .info {
-  // visibility: hidden;
   display: none;
   position: relative;
 
@@ -226,6 +222,7 @@ body {
   left: 0;
 }
 
+
 .sidebar {
 
   display: none;
@@ -233,7 +230,7 @@ body {
   margin-top: 81px;
 
   &__tab {
-    display: block;
+    position: relative;
     font-size: 18px;
     font-weight: 700;
     line-height: 25px;
@@ -251,6 +248,17 @@ body {
       background: #EDF1F7;
     }
   }
+}
+
+.invisible-link {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 81px;
+  width: 220px;
+  z-index: 1;
+  visibility: hidden;
 }
 
 .owl-carousel .owl-item {

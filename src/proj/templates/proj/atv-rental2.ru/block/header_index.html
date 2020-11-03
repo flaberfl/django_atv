@@ -1,61 +1,62 @@
 {% load static %}
 {% load rupluralize %}
 <header class="header">
-	<div class="header__top">
-		<div class="container">
-			<div class="header__top-inner">
-				<div class="logo header__logo">
-					<a class="logo__link" href="/">
-						<img class="logo__img" src="{% static static_prefix|add:'../img/logo.png' %}" alt="logo">
-					</a>
-					<div class="descr header__descr">сервис - дескриптор</div>
-				</div>
-				<div class="info header__info">
-					<a class="phone header__phone" href="tel:74956458787">+7(495) 645-87-87</a>
-					<p class="phone-subtitle header__phone-subtitle">Есть вопросы? Звоните!</p>
-				</div>
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <div class="logo header__logo">
+          <a class="logo__link" href="/">
+            <img class="logo__img" src="{% static static_prefix|add:'../img/logo.png' %}" alt="logo">
+          </a>
+          <div class="descr header__descr">сервис - дескриптор</div>
+        </div>
+        <div class="info header__info">
+          <a class="phone header__phone" href="tel:74956458787">+7(495) 645-87-87</a>
+          <p class="phone-subtitle header__phone-subtitle">Есть вопросы? Звоните!</p>
+        </div>
 
-				<nav class="menu">
-					<div class="menu__hamburger">
-						<input id="menu__toggle" type="checkbox" />
-						<label class="menu__btn" for="menu__toggle">
-							<span></span>
-						</label>
-						<ul class="menu__box">
-							<li class="menu__item" data-id="1"><a href="#category">Квадроциклы</a></li>
-							<li class="menu__item" data-id="2"><a href="#category">Снегоходы</a></li>
-							<li class="menu__item" data-id="3"><a href="#category">Картинги</a></li>
-							<li class="menu__item" data-id="4"><a href="#category">Вид услуги</a> </li>
-							<li class="menu__item" data-id="5"><a href="#category">Вид услуги</a> </li>
-							<li class="menu__item" data-id="6"><a href="#category">Вид услуги</a> </li>
-							<li class="menu__item" data-id="7"><a href="#category">Вид услуги</a> </li>
-						</ul>
-					</div>
-				</nav>
+        <nav class="menu">
+          <div class="menu__hamburger">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li class="menu__item" data-id="1"><a href="#category">Квадроциклы</a></li>
+              <li class="menu__item" data-id="2"><a href="#category">Снегоходы</a></li>
+              <li class="menu__item" data-id="3"><a href="#category">Картинги</a></li>
+              <li class="menu__item" data-id="4"><a href="#category">Вид услуги</a> </li>
+              <li class="menu__item" data-id="5"><a href="#category">Вид услуги</a> </li>
+              <li class="menu__item" data-id="6"><a href="#category">Вид услуги</a> </li>
+              <li class="menu__item" data-id="7"><a href="#category">Вид услуги</a> </li>
+            </ul>
+          </div>
+        </nav>
 
 
-			</div>
-		</div>
-	</div>
-	<div class="header__content">
-		<div class="container">
-			<h1 class="header__title">Закажите катание на квадроциклах прямо сейчас</h1>
-			<div class="header__advantages">
-				<div class="advantages__item">Более 50 маршрутов в Москве</div>
-				<div class="advantages__item">более 50 видов техники</div>
-				<div class="advantages__item">в 5-ти локациях в Москве</div>
-			</div>
-			<div class="header__button-wrap">
-				<a class="button header__button" href="service_list">Перейти в каталог</a>
-			</div>
-			<div>
-				<img class="header__img" src="{% static static_prefix|add:'../img/kvadro.png' %}" alt="">
-			</div>
-			<div class="advantages__bottom">
-				<p class="advantages__bottom-item">Работаем более <b>5 лет</b></p>
-				<p class="advantages__bottom-item"><b>Безопасное</b> онлайн бронирование</p>
-				<p class="advantages__bottom-item">Работаем более <b>5 лет</b></p>
-			</div>
-		</div>
-	</div>
+      </div>
+    </div>
+  </div>
+  <div class="header__content">
+    <div class="container">
+      <h1 class="header__title">Закажите катание на квадроциклах прямо сейчас</h1>
+      <div class="header__advantages">
+        <div class="advantages__item">Более 50 маршрутов в Москве</div>
+        <div class="advantages__item">более 50 видов техники</div>
+        <div class="advantages__item">в 5-ти локациях в Москве</div>
+      </div>
+      <div class="header__button-wrap">
+        <!-- <a class="button header__button" href="service_list">Перейти в каталог</a> -->
+        <a class="button header__button" href="#category">Перейти в каталог</a>
+      </div>
+      <div>
+        <img class="header__img" src="{% static static_prefix|add:'../img/kvadro.png' %}" alt="">
+      </div>
+      <div class="advantages__bottom">
+        <p class="advantages__bottom-item">Работаем более <b>5 лет</b></p>
+        <p class="advantages__bottom-item"><b>Безопасное</b> онлайн бронирование</p>
+        <p class="advantages__bottom-item">Работаем более <b>5 лет</b></p>
+      </div>
+    </div>
+  </div>
 </header>

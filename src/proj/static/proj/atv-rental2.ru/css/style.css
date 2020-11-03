@@ -689,7 +689,7 @@ body {
 }
 
 .sidebar__tab {
-  display: block;
+  position: relative;
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
@@ -706,6 +706,17 @@ body {
 
 .sidebar__tab.active {
   background: #EDF1F7;
+}
+
+.invisible-link {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 81px;
+  width: 220px;
+  z-index: 1;
+  visibility: hidden;
 }
 
 .owl-carousel .owl-item {

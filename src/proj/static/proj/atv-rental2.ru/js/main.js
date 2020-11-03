@@ -65,23 +65,18 @@ $(function () {
 
   swipeTabs.owlCarousel({
     loop: true,
-    // center: true,
     smartSpeed: 1000,
     autoWidth: true,
-    // wrapAround: true,
     dots: false,
-    // autoplay: true,
+    autoplay: true,
     autoplayTimeout: 5000,
     touchDrag: true
 
   });
 
   photoSlider.owlCarousel({
-    // loop: true,
-    // center: true,
     items: 1,
     smartSpeed: 1000,
-    // autoWidth: true,
     wrapAround: true,
     dots: true,
     nav: false,
@@ -90,11 +85,8 @@ $(function () {
   });
 
   photoSlider1.owlCarousel({
-    // loop: true,
-    // center: true,
     items: 1,
     smartSpeed: 1000,
-    // autoWidth: true,
     wrapAround: true,
     dots: true,
     nav: false,
