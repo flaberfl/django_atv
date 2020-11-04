@@ -131,6 +131,11 @@ body {
     z-index: 999;
   }
 
+  &__hamburger-anchor {
+    position: fixed;
+    z-index: 999;
+  }
+
   &__btn {
     display: flex;
     /* используем flex для центрирования содержимого */
@@ -267,16 +272,16 @@ body {
 
 }
 
-.invisible-link {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  height: 81px;
-  width: 220px;
-  z-index: 1;
-  visibility: hidden;
-}
+// .invisible-link {
+//   position: absolute;
+//   content: "";
+//   top: 0;
+//   left: 0;
+//   height: 81px;
+//   width: 220px;
+//   z-index: 1;
+//   visibility: hidden;
+// }
 
 .owl-carousel .owl-item {
   min-height: 70px;
@@ -316,6 +321,10 @@ body {
 
 .mobile__slider {
   max-width: 1366px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
 }
 
 .mobile__tabs {

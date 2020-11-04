@@ -579,6 +579,11 @@ body {
   z-index: 999;
 }
 
+.menu__hamburger-anchor {
+  position: fixed;
+  z-index: 999;
+}
+
 .menu__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -724,17 +729,6 @@ body {
   transition: all 0.5s;
 }
 
-.invisible-link {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  height: 81px;
-  width: 220px;
-  z-index: 1;
-  visibility: hidden;
-}
-
 .owl-carousel .owl-item {
   min-height: 70px;
 }
@@ -771,6 +765,11 @@ body {
 
 .mobile__slider {
   max-width: 1366px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
 }
 
 .mobile__tabs {
@@ -1497,6 +1496,10 @@ body {
 
 .route__photo-desktop {
   display: none;
+}
+
+.mobile__tab1:active {
+  font-size: 10px;
 }
 
 .seo {
