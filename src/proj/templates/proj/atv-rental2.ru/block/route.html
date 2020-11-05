@@ -35,13 +35,11 @@
     </div>
   </div>
 
-
   <div class="category__content">
 
     <div class="wrapper">
 
       <div class="category__title route__title route__title-rt">О маршруте</div>
-
       <div class="category__presents route__presents">
 
         <div class="category__presents-item">
@@ -62,7 +60,6 @@
       </div> <!-- /category__presents -->
 
       <div class="category__route">
-
         <div class="category__route-about category__item">
           <img class="category__route-img" src="{% static static_prefix|add:'../img/atv__img.jpg' %}" alt="">
           <div class="category__route-description">
@@ -77,9 +74,6 @@
               officia consequat officia culpa sunt. Do nostrud eu quis </p>
           </div>
         </div>
-
-
-
       </div>
 
       <div class="route__map" id="route__map">
@@ -165,12 +159,36 @@
                 </div>
                 <div class="select-button-title">Выберите количество</div>
 
-                <div class="select-card-button">
-                  <p class="card-button-price">2 500 р</p>
-                  <div class="button category__button">
-                    <a href="#">1 квадроцикл</a>
+                <div class="select is-active">
+
+                  <div class="select__header">
+                    <div class="select-card-button select__current">
+                      <p class="card-button-price">2 500 р</p>
+                      <div class="button category__button select-button">1 квадроцикл</div>
+                      <img class="select-svg" src="{% static static_prefix|add:'../img/svg/arr-small-down.svg' %}"
+                        alt="">
+                    </div>
+
                   </div>
-                </div>
+
+                  <div class="select__body">
+
+                    <div class="select-card-button">
+                      <p class="card-button-price">5 000 р</p>
+                      <div class="button category__button select-button">2 квадроцикл</div>
+                    </div>
+
+                    <div class="select-card-button">
+                      <p class="card-button-price">7 500 р</p>
+                      <div class="button category__button select-button">3 квадроцикл</div>
+                    </div>
+
+                  </div> <!-- select__body -->
+
+                </div> <!-- select -->
+
+
+
               </div>
 
             </div>
@@ -202,7 +220,7 @@
 
                 <div class="select-card-button">
                   <p class="card-button-price">2 500 р</p>
-                  <div class="button category__button">
+                  <div class="button category__button select-button">
                     <a href="service_list">1 квадроцикл</a>
                   </div>
                 </div>
@@ -237,7 +255,7 @@
 
                 <div class="select-card-button">
                   <p class="card-button-price">2 500 р</p>
-                  <div class="button category__button">
+                  <div class="button category__button select-button">
                     <a href="service_list">1 квадроцикл</a>
                   </div>
                 </div>

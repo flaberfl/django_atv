@@ -68,8 +68,9 @@ $(function () {
     smartSpeed: 1000,
     autoWidth: true,
     dots: false,
-    autoplay: true,
+    // autoplay: true,
     autoplayTimeout: 5000,
+    stopOnHover: true,
     touchDrag: true
 
   });
@@ -81,7 +82,6 @@ $(function () {
     dots: true,
     nav: false,
     touchDrag: true
-
   });
 
   photoSlider1.owlCarousel({
@@ -96,3 +96,18 @@ $(function () {
 
 
 });
+
+let select = function () {
+  let selectHeader = document.querySelectorAll('.select__header');
+
+  selectHeader.forEach(item => {
+    item.addEventListener('click', function () {
+      this.parentElement.classList.toogle('.is-active');
+    })
+  })
+
+
+};
+
+
+select();

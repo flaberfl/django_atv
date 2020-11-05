@@ -1383,19 +1383,47 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 12px;
-  padding-bottom: 30px;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 283px;
+  margin-left: 33px;
+  position: relative;
+  cursor: pointer;
 }
 
 .card-button-price {
   font-size: 16px;
   font-weight: 800;
-  padding-left: 21px;
-  padding-top: 14px;
+  padding-left: 0;
+  padding-top: 15px;
+  padding-right: 20px;
+}
+
+.select-button {
+  padding: 0;
+  height: 51px;
+  line-height: 51px;
+  padding-left: 51px;
+  padding-right: 80px;
+  letter-spacing: 0px;
+  cursor: pointer;
+}
+
+.select-button:before {
+  right: 141px;
+}
+
+.select-button::after {
+  display: none;
+  background-image: url(../img/svg/arr-small-down.svg);
+  background-repeat: no-repeat;
+  top: 62%;
+  right: 49px;
+}
+
+.select-svg {
+  position: absolute;
+  content: "";
+  top: 44%;
+  right: 127px;
+  z-index: 999;
 }
 
 .select-card-title {
@@ -1433,6 +1461,15 @@ body {
 
 .select-card-img img {
   height: 100%;
+}
+
+.select.is-active .select__body {
+  display: block;
+}
+
+.select__body {
+  position: absolute;
+  display: none;
 }
 
 .category__route-about {
@@ -1496,10 +1533,6 @@ body {
 
 .route__photo-desktop {
   display: none;
-}
-
-.mobile__tab1:active {
-  font-size: 10px;
 }
 
 .seo {
