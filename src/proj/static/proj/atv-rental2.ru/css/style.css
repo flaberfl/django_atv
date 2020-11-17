@@ -1371,7 +1371,7 @@ body {
 .select-card-description {
   position: relative;
   background-color: #EDF1F7;
-  z-index: -1;
+  z-index: 0;
   padding-top: 38px;
   padding-left: 35px;
   width: 100%;
@@ -1385,7 +1385,7 @@ body {
   margin-top: 12px;
   margin-left: 33px;
   position: relative;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .card-button-price {
@@ -1470,6 +1470,9 @@ body {
 .select__body {
   position: absolute;
   display: none;
+  -webkit-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
 }
 
 .category__route-about {
@@ -1524,10 +1527,6 @@ body {
 }
 
 .route__map img:nth-child(2) {
-  display: none;
-}
-
-.route__select {
   display: none;
 }
 

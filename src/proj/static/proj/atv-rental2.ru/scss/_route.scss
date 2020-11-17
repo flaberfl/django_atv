@@ -99,7 +99,7 @@
   position: relative;
   // margin-bottom: 50px;
   background-color: #EDF1F7;
-  z-index: -1;
+  z-index: 0;
   padding-top: 38px;
   padding-left: 35px;
   width: 100%;
@@ -112,7 +112,9 @@
   // padding-bottom: 30px;
   margin-left: 33px;
   position: relative;
-  cursor: pointer;
+  cursor: pointer !important;
+
+
 
 }
 
@@ -205,6 +207,7 @@
 .select__body {
   position: absolute;
   display: none;
+  transition: 1s all;
 }
 
 .category__route-about {
@@ -265,9 +268,9 @@
   }
 }
 
-.route__select {
-  display: none;
-}
+// .route__select {
+//   display: none;
+// }
 
 .route__photo-desktop {
   display: none;

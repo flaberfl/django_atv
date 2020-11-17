@@ -1,3 +1,32 @@
+let select = function () {
+  let selectHeader = document.querySelectorAll('.select__header');
+  // let selectItem = document.querySelectorAll('.select-card-button');
+
+  selectHeader.forEach(item => {
+    item.addEventListener('click', selectToggle)
+  });
+
+  // selectItem.forEach(item => {
+  //   item.addEventListener('click', selectChoose)
+  // });
+
+  function selectToggle() {
+    this.parentElement.classList.toggle('is-active');
+  }
+
+  // function selectChoose() {
+  //   let text = this.innerText,
+  //     currentText = this.closest('.select').querySelector('.select__current');
+  //   currentText.innerText = text;
+  // }
+
+
+
+};
+
+
+select();
+
 $(function () {
 
   // Табы для сайдбара и мобильного сладер-меню
@@ -96,18 +125,3 @@ $(function () {
 
 
 });
-
-let select = function () {
-  let selectHeader = document.querySelectorAll('.select__header');
-
-  selectHeader.forEach(item => {
-    item.addEventListener('click', function () {
-      this.parentElement.classList.toogle('.is-active');
-    })
-  })
-
-
-};
-
-
-select();
